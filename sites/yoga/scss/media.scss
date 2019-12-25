@@ -1,0 +1,330 @@
+@media screen and (max-width: 992px) {
+	//Styles for 992px and bigger
+	.container{
+		width: 100%;
+		padding: 0 15px 0 15px;
+	}
+
+	header{
+		height: 1000px;
+	}
+
+	.whats{
+		padding-top: 100px;
+	}
+
+	.whats__wrapper{
+		flex-direction: row-reverse;
+	}
+
+	.whats__img, .ways__img, .power__img{
+		width: 400px;
+		height: 400px;
+	}
+
+	.whats__heading{
+		margin-top: 50px;
+		width: 100%;
+	}
+
+	.whats__content {
+    	width: 500px;
+	}
+
+	.whats__list-article{
+		width: 100%;
+	}
+
+	.power{
+		margin-top: 50px;
+	}
+
+	.power__content{
+		width: 500px;
+	}
+
+	.power__heading {
+	    width: 100%;
+	}
+
+	.power__article {
+     	margin-left: 0; 
+	}
+
+	.read-more {
+	    margin-left: 0;
+	}
+
+	.ways{
+		margin-top: 50px;
+	}
+
+	.ways__content-wr{
+		flex-direction: row-reverse;
+		width: 100%;
+	}
+
+	.ways__content{
+		width: 500px;
+	}
+
+	.ways__article {
+	     margin-left: 0;
+	     text-indent: 20px;
+	     width: 500px;
+	     margin-top: 50px;
+	}
+
+	.ways {
+	    padding-bottom: 50px;
+	}
+	
+	.footer__top-card-price-wr {
+	    font-size: 80px;
+	}
+	
+	.footer__top-card-desc{
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.footer__top-card {
+   		height: 640px;
+   	}
+
+	.footer__top-card-price-wr:after{
+		margin-top: 50px;
+	}
+
+	.second-card .footer__top-card-price-wr:after {
+	    margin-top: 50px;
+	}
+
+	.second-card {
+	    height: 740px;
+	}
+
+	.footer__wr{
+		padding: 110px 60px 50px 60px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	//Styles for 992px to 765px
+
+	.whats__img, .ways__img, .power__img{
+		width: 300px;
+		height: 300px;
+	}
+
+	.header__nav-item{
+		margin-right: 40px;
+	}
+	.container{
+		padding: 0 25px 0 25px;
+	}
+	.header__main-wr{
+		margin-left: 0;
+	}
+
+	.why__list {
+    	margin-top: 80px;
+    	flex-direction: column;
+	}
+
+	.why__list .why__list-item:nth-child(1){
+		margin-top: 0;
+	}
+
+	.why__list-item{
+		margin-top: 60px;
+	}
+
+	.why__list-heading{
+		margin-top: 25px;
+	}
+
+	.whats__wrapper{
+		flex-direction: column-reverse;
+		justify-content:center;
+	}
+
+	.whats__content {
+   		width: 100%;
+	}
+
+	.whats__heading, .whats__list-heading , .whats__list-article  {
+		text-align: center;
+	}
+
+	.whats__img{
+		display: none;
+	}
+
+	.whats__list-item:before{
+		margin-left: 100px;
+	}
+
+	.power__content-wr{
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.power__img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.power__content{
+		width: 100%;
+	}
+
+	.power__heading {
+		width: 100%;
+		margin-top: 60px;
+	}
+
+	.power__article {
+		width: 100%;
+	}
+
+	.ways__content-wr{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.ways__img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.ways__content{
+		width: 100%;
+	}
+
+	.ways__heading {
+		margin-top: 60px;
+	}
+
+	.ways__article {
+		width: 100%;
+	}
+
+	.ways__article-link{
+		margin-top: 40px;
+	}
+
+	.footer__top-wr{
+		flex-direction: column;
+	}
+
+	.footer__top-card{
+		margin-top: 50px;
+	}
+
+	.footer__top-wr .footer__top-card:nth-child(1){
+		margin-top: 0;
+	}
+
+	.footer__wr{
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	//Styles for 765px to 480px
+	.container{
+		padding: 0 10px 0 10px;
+	}
+
+	header{
+		height: auto;
+	}
+	.header__wrapper{
+		flex-direction: column;
+		padding: 40px 5px 0 5px;
+	}
+
+	.header__nav{
+		margin-top: 15px;
+	}
+
+	.header__nav-item {
+	    margin-right: 15px;
+	}
+
+	.header__but-login{
+		float: none;
+		margin-top: 15px;
+	}
+
+	.header__main-wr{
+		margin-top: 80px;
+		text-align: center;
+	}
+
+	.header__heading, .header__article{
+		width: 100%;
+	}
+
+	.header__main-buts{
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.header__main-buts .header__main-btn:nth-child(2){
+		margin-right: 0;
+	}
+
+	.why{
+		margin-top: 80px;
+	}
+
+	.why__article{
+		width: 100%;
+	}
+
+	.whats__list {
+	    margin-top: 0;
+	    margin-left: 0;
+    }
+
+    .whats__list-item:before{
+    	display:none;
+    }
+
+    .footer__top-list {
+	    margin-left: 110px;
+	}
+
+    .footer__top-card {
+	    width: 95%;
+	}
+
+	.footer__mmu{
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+	}
+
+	.footer__wr{
+		background-color: transparent;
+		margin-top: 0;
+		justify-content: space-between;
+	}
+
+	.footer__mmu-item{
+		margin-top: 40px;
+		width: 120px;
+	}
+
+	.footer__list-link{
+		text-decoration: underline;
+	}
+
+	.footer__wr {
+	    padding: 110px 15px 50px 15px;
+	}
+}
