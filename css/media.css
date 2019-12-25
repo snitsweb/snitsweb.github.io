@@ -1,0 +1,141 @@
+@media screen and (max-width: 900px) {
+	article{
+		width: 95%;
+		padding: 0;
+	}
+	.main-screen--logo{
+		margin-right: 77px;
+	}
+	h1{
+		margin:290px 140px 30px 140px;
+		line-height: 1.5em;
+	}
+	.about-me--subtitle {
+		margin: 50px 0 45px 0px;
+	}
+	.about-me--content-block1{
+		width: 60%;
+	}
+	.about-me--content-block2 {
+		padding: 0 0 0 35px;
+		width: 40%;
+	}
+	.about-me--content-block3 .about-me--subtitle{
+		margin: 30px 0 45px 5px;
+	}
+	.about-me--merit {
+		margin: 0px 32px 23px 0;
+	}
+	.about-me--content-block3{
+		padding: 0;
+	}
+	.#skills article {
+		padding: 60px 0 75px 0;
+	}
+	.porfolio--preview {
+		width: 265px;
+		height: 265px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#main-screen{
+		padding: 42px 0 60px 0;
+	}
+	.main-screen--logo {
+		margin-right: 38px;
+	}
+	.main-screen--navigation{
+		float: none;
+	}
+	.main-screen--email{
+		float: right;
+		display: block;
+	}
+	h1 {
+		margin: 250px 12.5% 30px 12.5%;
+		line-height: 2em;
+	}
+	.about-me--content-block1 {
+		width: 45%;
+	}
+	.about-me--content-block2, .about-me--content-block3{
+		width: 50%;
+		padding: 0 0 0 35px;
+	}
+	.joke-hidden{
+		display: none;
+	}
+	#skills article {
+		padding: 50px 0 40px 0;
+	}
+	.skills--item-skill{
+		margin-bottom: 30px;
+	}
+	.portfolio--item {
+		margin-right: 40px;
+		margin-bottom: 40px;
+	}
+	.footer-wrapper {
+		padding: 85px 0 30px 0;
+	}
+}
+@media screen and (max-width: 480px) {
+	.main-screen--logo {
+		margin-right: 30px;
+	}
+	.main-screen--navigation{
+		display: none;
+	}
+	.main-screen--email{
+		font-size: 13px;
+		margin-right: 15px;
+		margin-top: 22px;
+		float: right;
+	}
+	h1 {
+		margin: 143px 12.5% 60px 12.5%;
+	}
+	.main-screen--button-href{
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	#main-screen{
+		padding: 42px 0 35px 0;
+	}
+	.main-screen--wrapper{
+		padding-bottom: 40px;
+	}
+	.main-screen--logo {
+		margin-left: 15px;
+		margin-bottom: 8px;
+	}
+	.main-screen--email{
+		float: left;
+		margin-left: 15px;
+	}
+	h1{
+		margin: 119px 0px 30px 0px;
+		font-size: 45px;
+		line-height: 1.5em;
+	}
+	.main-screen--button-href{
+		display: none;
+	}
+	.about-me--content-block1, .about-me--content-block2 , .about-me--content-block3{
+		float: none;
+		width: auto;
+	}
+	.about-me--bg-text {
+		margin-bottom: 25px;
+	}
+	.about-me--subtitle {
+		margin: 40px 0 40px 0px;
+	}
+	.portfolio--wrapper{
+		width: 84%;
+	}
+	.portfolio--item {
+		margin-right: 0;
+	}
