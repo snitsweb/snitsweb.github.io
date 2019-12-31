@@ -1,17 +1,17 @@
 $(document).ready(function() {
-    $('.nav-link-1').click(function(){
-       $('html, body').animate({scrollTop:$('#header').position().top}, 2000);
+	$('.main-screen--button-href').click(function(){
+       $('html, body').animate({scrollTop:$('#about-me').position().top}, 1200);
     });
 
-    $('.nav-link-2').click(function(){
-       $('html, body').animate({scrollTop:$('#why').position().top}, 2000);
+    $('.link_1').click(function(){
+       $('html, body').animate({scrollTop:$('#about-me').position().top}, 1200);
     });
 
-    $('.nav-link-3').click(function(){
-       $('html, body').animate({scrollTop:$('#footer__down').position().top}, 2000);
+    $('.link_2').click(function(){
+       $('html, body').animate({scrollTop:$('#skills').position().top}, 1200);
     });
 
-    $('.nav-link-4').click(function(){
-       $('html, body').animate({scrollTop:$('#footer').position().top}, 2000);
+    $('.link_3').click(function(){
+       $('html, body').animate({scrollTop:$('#portfolio').position().top}, 1200);
     });
 });
