@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>MYPORTFOLIO</title>
-	<link rel="icon" href="//wayup.in/assets/templates/wp/images/logo-footer.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="//wayup.in/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
 
 	<meta name="description" content="Описание страницы для поисковых систем">
 	<meta name="keywords" content="Наиболее важные ключевые слова страницы для поисковых систем">
@@ -14,7 +12,11 @@
 	<link rel="stylesheet" href="libs/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
-	<script src="libs/jquery-3.2.1.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
@@ -26,24 +28,24 @@
 				</span>
 				<nav>
 					<ul class="main-screen--navigation">
-						<li class="main-screen--nav-item"><a href="#">обо мне</a></li>
-						<li class="main-screen--nav-item"><a href="#">навыки</a></li>
-						<li class="main-screen--nav-item"><a href="#">работы</a></li>
+						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_1">обо мне</a></li>
+						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_2">навыки</a></li>
+						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_3">работы</a></li>
 					</ul>
 				</nav>
-				<span class="main-screen--email">oleksnitsaruk@gmail.com</span>
+				<a href="mailto:oleksnitsaruk@gmail.com" class="main-screen--email">oleksnitsaruk@gmail.com</a>
 			</div>
-			<h1>
+			<h1 class="wow fadeIn">
 				Дело, которым я живу
 			</h1>
-			<h2 class="main-screen--subtitle">
+			<h2 class="main-screen--subtitle wow fadeIn">
 				верстка & Дизайн
 			</h2>
 			<a class="main-screen--button-href"></a>
 		</article>
 	</section>
 	<section id="about-me">
-		<article class="about-me--wrapper clearfix">
+		<article class="about-me--wrapper clearfix wow fadeIn" data-wow-offset:"100">
 			<h2 class="about-me--heading">
 				обо мне
 			</h2>
@@ -108,7 +110,7 @@
 		</article>
 	</section>
 	<section id="skills">
-		<article class="skills--wrapper clearfix">
+		<article class="skills--wrapper clearfix wow fadeInLeft" data-wow-offset:"100">
 			<h2 class="skills--heading">Навыки</h2>
 			<div class="skills--item-skill">
 				<img src="img/skills-item-bg.png" alt="skills cyrcle" class="skills--img-bg-item">
@@ -133,7 +135,7 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<article class="portfolio--wrapper clearfix">
+		<article class="portfolio--wrapper clearfix wow zoomIn" data-wow-offset:"500">
 			<h2 class="portfolio--heading">Работы</h2>
 			<div class="portfolio--item clearfix">
 				<img src="img/portf-1.png" alt="" class="porfolio--preview">
@@ -163,5 +165,9 @@
 			<span>2017-2099 / Смотрю в будущее</span>
 		</article>
 	</footer>
+
+	<script>
+    	new WOW().init();
+	</script>
 </body>
 </html>
