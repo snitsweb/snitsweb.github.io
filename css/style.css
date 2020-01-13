@@ -64,6 +64,8 @@
 div, p, input, button, form {
 	box-sizing: border-box;
 }
+
+
 body{
 	font-family: MuseoSansCyrl, Arial, sans-serif;
 	font-weight: normal;
