@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+$black: #3a3a3a;;
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+    padding: 0 30px; 
+}
+
+.heading{
+	font-weight: 700;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: $black;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+}
+
+.article{
+	font-weight: 300;
+    font-style: normal;
+    font-family: 'Roboto', sans-serif;
+    color: #989797;
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 0px;
+    color: $black;
+}
+

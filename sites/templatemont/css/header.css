@@ -1,0 +1,444 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  /*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block; }
+
+b,
+strong {
+  /*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  /*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic; }
+
+ol,
+ul {
+  list-style: none; }
+
+li {
+  /*
+  For IE6 + IE7:
+
+  "display: list-item" keeps bullets from
+  disappearing if hasLayout is triggered.
+*/
+  display: list-item; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+sub,
+sup,
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+svg {
+  /*
+  For IE9. Without, occasionally draws shapes
+  outside the boundaries of <svg> rectangle.
+*/
+  overflow: hidden; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.center {
+  text-align: center; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.heading {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  color: #3a3a3a;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0px; }
+
+.article {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #989797;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  color: #3a3a3a; }
+
+.header_wr-bg {
+  background-color: #212121; }
+
+.header__wr-top {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300; }
+
+.header__phone-link {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.header__phone-link:hover {
+  text-decoration: underline;
+  color: #b04373; }
+
+.header__social-link {
+  font-size: 16px;
+  color: #fff; }
+
+.header__social-icons i {
+  margin-left: 5px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.header__social-icons i:hover {
+  color: #989da2; }
+
+.header__wr-middle-bg {
+  background-color: #d1d1d1;
+  position: relative; }
+
+.header_wr-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 95px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 0px;
+  color: #3a3a3a;
+  font-weight: 700; }
+
+.header__logo-number {
+  color: #b04373; }
+
+.header__nav-list {
+  list-style: none;
+  display: inline-block; }
+
+.header__nav-item {
+  float: left;
+  margin-right: 35px;
+  position: relative;
+  display: inline-block;
+  position: relative; }
+
+.header__nav-list .header__nav-item:nth-child(5) {
+  margin-right: 0; }
+
+.header__nav-link {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.header__nav-item:hover .header__nav-link {
+  color: #b04373; }
+
+.header__nav-item:hover:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #B04373;
+  margin-top: 7px; }
+
+.header__nav-item-active a {
+  color: #b04373; }
+
+.header__nav-item-active:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #B04373;
+  margin-top: 7px;
+  color: #b04373; }
+
+.header__dropdown-content {
+  padding-top: 30px;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1; }
+
+.hamburder_wr {
+  display: none;
+  position: relative;
+  width: 100%; }
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after,
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #B04373; }
+
+.hamburder__mmu {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: none;
+  margin: auto;
+  z-index: 100;
+  position: absolute;
+  width: 80%;
+  text-align: left;
+  left: 0;
+  background-color: #ffffff;
+  border: 2px solid #b04373;
+  top: 80px;
+  left: 0;
+  right: 0; }
+
+.hamburder-link {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: #b04373;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding: 10px 50px 10px 20px;
+  text-transform: uppercase; }
+
+.hamburger-active {
+  background-color: #b04373;
+  color: #fff; }
+
+.header__dropdown-content .header__gear-hidden {
+  background-color: #b04373;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: .48px;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.header__dropdown-content .header__gear-hidden:hover {
+  background-color: #3a3a3a; }
+
+.header__nav-item:hover .header__dropdown-content {
+  display: block; }
+
+@media screen and (max-width: 625px) {
+  .header__nav-item {
+    margin-right: 15px;
+    line-height: 2; }
+  .header__logo {
+    font-size: 20px; } }
+
+@media screen and (max-width: 480px) {
+  .header__nav-mmu {
+    display: none; }
+  .hamburder_wr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+  .header__logo-main, .header__logo-number {
+    font-size: 22px; } }

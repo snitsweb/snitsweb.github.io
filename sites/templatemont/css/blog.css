@@ -1,0 +1,438 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  /*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block; }
+
+b,
+strong {
+  /*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  /*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic; }
+
+ol,
+ul {
+  list-style: none; }
+
+li {
+  /*
+  For IE6 + IE7:
+
+  "display: list-item" keeps bullets from
+  disappearing if hasLayout is triggered.
+*/
+  display: list-item; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+sub,
+sup,
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+svg {
+  /*
+  For IE9. Without, occasionally draws shapes
+  outside the boundaries of <svg> rectangle.
+*/
+  overflow: hidden; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.center {
+  text-align: center; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px; }
+
+.heading {
+  font-weight: 700;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  color: #3a3a3a;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0px; }
+
+.article {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #989797;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+  color: #3a3a3a; }
+
+body {
+  font-size: 17px;
+  font-family: sans-serif; }
+
+.container {
+  max-width: 1200px; }
+
+.main {
+  padding: 30px 0 120px 0; }
+
+.main__nav-help {
+  font-weight: 300;
+  font-family: sans-serif;
+  color: #3a3a3a;
+  font-size: 12px;
+  line-height: 1.7;
+  text-transform: uppercase; }
+
+.main__wr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.main__left {
+  width: 850px; }
+
+.main__card {
+  margin-top: 60px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #F4F4F4; }
+
+.main__card-title-link, .main__posts-title {
+  color: #212121;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 1.7;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.main__card-title-link:hover {
+  color: #b04373; }
+
+.main__card-calendar {
+  margin-top: 35px; }
+
+.icon-calendar {
+  font-size: 14px;
+  color: #b04373; }
+
+.main__card-date {
+  margin-left: 5px;
+  color: #b04373;
+  font-size: 14px;
+  line-height: 1.6; }
+
+.main__card-pic {
+  margin-top: 35px;
+  width: 100%; }
+
+.main__card-desc {
+  margin-top: 20px;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  color: #989797;
+  font-size: 17px;
+  line-height: 1.7; }
+
+.main__card-read-more {
+  color: #fff;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: .4px;
+  line-height: 26px;
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 12px 49px;
+  cursor: pointer;
+  background-color: #b04373;
+  border-color: #b04373;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.main__card-read-more:hover {
+  background-color: #3a3a3a;
+  border-color: #3a3a3a; }
+
+.main__right {
+  width: 270px;
+  padding: 60px 0 10px 0; }
+
+.main__post {
+  margin-top: 60px; }
+
+.main__post-link {
+  display: block;
+  width: 100%;
+  text-decoration: none; }
+
+.main__post-pic {
+  width: 100%; }
+
+.main__post-title {
+  margin-top: 35px;
+  font-family: sans-serif;
+  color: #3a3a3a;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.main__post-title:hover {
+  color: #b04373; }
+
+.main__bottom_pages {
+  margin-top: 50px; }
+
+.main__page-nav {
+  float: left; }
+
+.main__page-link {
+  text-decoration: none;
+  color: #3a3a3a;
+  margin-right: 20px;
+  font-size: 14px; }
+
+.main__page-link:hover {
+  color: #b04373; }
+
+.disable-link {
+  pointer-events: none; }
+
+@media screen and (max-width: 1200px) {
+  .main__left {
+    width: 75%; }
+  .main__right {
+    width: 20%; } }
+
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0 15px; } }
+
+@media screen and (max-width: 766px) {
+  .main__card {
+    margin-top: 35px; }
+  .main__card-title-link {
+    font-size: 22px;
+    line-height: 1.4; }
+  .main__card-calendar {
+    margin-top: 15px; }
+  .main__card-date, .icon-calendar {
+    font-size: 13px; }
+  .main__right {
+    padding: 30px 0 10px 0; }
+  .main__posts-title {
+    font-size: 22px; } }
+
+@media screen and (max-width: 650px) {
+  .main__wr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .main__left, .main__right {
+    width: 100%; }
+  .main__post-title {
+    margin-top: 20px;
+    font-size: 16px; } }
+
+@media screen and (max-width: 480px) {
+  .main {
+    padding-bottom: 60px; }
+  .main__wr {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .main__left,
+  .main__right {
+    width: 100%; }
+  .main__card {
+    padding-bottom: 30px; }
+  .main__card-title-link, .main__posts-title {
+    font-size: 20px; }
+  .main__card-desc {
+    font-size: 12px;
+    line-height: 1.4; }
+  .main__card-read-more {
+    padding: 8px 30px; }
+  .main__post {
+    margin-top: 35px; }
+  .main__post-title {
+    font-size: 16px;
+    line-height: 1.7; } }

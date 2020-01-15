@@ -1,0 +1,102 @@
+@media screen and (max-width: 1200px){
+	.main__left{
+		width: 75%;
+	}
+
+	.main__right{
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container{
+		width: 100%;
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 766px){
+
+	.main__card{
+		margin-top: 35px;
+	}
+
+	.main__card-title-link{
+		font-size: 22px;
+		line-height: 1.4;
+	}
+
+	.main__card-calendar{
+		margin-top: 15px;
+	}
+
+	.main__card-date, .icon-calendar{
+		font-size: 13px;
+	}
+
+	.main__right{
+		padding: 30px 0 10px 0;
+	}
+
+	.main__posts-title{
+		font-size: 22px;
+	}
+}
+
+
+@media screen and (max-width: 650px){
+	.main__wr{
+		flex-direction: column;
+	}
+
+	.main__left, .main__right{
+		width: 100%;
+	}
+
+	.main__post-title {
+	    margin-top: 20px;
+	    font-size: 16px;
+ 	}
+ }
+
+@media screen and (max-width: 480px){
+
+	.main{
+		padding-bottom: 60px;
+	}
+
+	.main__wr{
+		flex-wrap: wrap
+	}
+
+	.main__left,
+	.main__right{
+		width: 100%;
+	}
+
+	.main__card{
+		padding-bottom: 30px;
+	}
+
+	.main__card-title-link, .main__posts-title{
+		font-size: 20px;
+	}
+
+	.main__card-desc{
+		font-size: 12px;
+		line-height: 1.4;
+	}
+
+	.main__card-read-more{
+		padding: 8px 30px;
+	}
+
+	.main__post{
+		margin-top: 35px;
+	}
+
+	.main__post-title{
+		font-size: 16px;
+		line-height: 1.7;
+	}
+}
