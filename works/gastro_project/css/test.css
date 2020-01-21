@@ -1,0 +1,711 @@
+/* `XHTML, HTML4, HTML5 Reset
+----------------------------------------------------------------------------------------------------*/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  /*
+  Override the default (display: inline) for
+  browsers that do not recognize HTML5 tags.
+
+  IE8 (and lower) requires a shiv:
+  http://ejohn.org/blog/html5-shiv
+*/
+  display: block; }
+
+b,
+strong {
+  /*
+  Makes browsers agree.
+  IE + Opera = font-weight: bold.
+  Gecko + WebKit = font-weight: bolder.
+*/
+  font-weight: bold; }
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  /*
+  For IE.
+  http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/
+  -ms-interpolation-mode: bicubic; }
+
+ol,
+ul {
+  list-style: none; }
+
+li {
+  /*
+  For IE6 + IE7:
+
+  "display: list-item" keeps bullets from
+  disappearing if hasLayout is triggered.
+*/
+  display: list-item; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+q {
+  quotes: none; }
+
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+sub,
+sup,
+small {
+  font-size: 75%; }
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+svg {
+  /*
+  For IE9. Without, occasionally draws shapes
+  outside the boundaries of <svg> rectangle.
+*/
+  overflow: hidden; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../libs/fonts/MuseoSansCyrl100.eot");
+  src: url("../libs/fonts/MuseoSansCyrl100.eot?#iefix") format("embedded-opentype"), url("../libs/fonts/MuseoSansCyrl100.woff") format("woff"), url("../libs/fonts/MuseoSansCyrl100.ttf") format("truetype"), url("../libs/fonts/MuseoSansCyrl100.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: 100; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../libs/fonts/MuseoSansCyrl300.eot");
+  src: url("../libs/fonts/MuseoSansCyrl300.eot?#iefix") format("embedded-opentype"), url("../libs/fonts/MuseoSansCyrl300.woff") format("woff"), url("../libs/fonts/MuseoSansCyrl300.ttf") format("truetype"), url("../libs/fonts/MuseoSansCyrl300.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../libs/fonts/MuseoSansCyrl500.eot");
+  src: url("../libs/fonts/MuseoSansCyrl500.eot?#iefix") format("embedded-opentype"), url("../libs/fonts/MuseoSansCyrl500.woff") format("woff"), url("../libs/fonts/MuseoSansCyrl500.ttf") format("truetype"), url("../libs/fonts/MuseoSansCyrl500.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../libs/fonts/MuseoSansCyrl700.eot");
+  src: url("../libs/fonts/MuseoSansCyrl700.eot?#iefix") format("embedded-opentype"), url("../libs/fonts/MuseoSansCyrl700.woff") format("woff"), url("../libs/fonts/MuseoSansCyrl700.ttf") format("truetype"), url("../libs/fonts/MuseoSansCyrl700.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url("../libs/fonts/MuseoSansCyrl900.eot");
+  src: url("../libs/fonts/MuseoSansCyrl900.eot?#iefix") format("embedded-opentype"), url("../libs/fonts/MuseoSansCyrl900.woff") format("woff"), url("../libs/fonts/MuseoSansCyrl900.ttf") format("truetype"), url("../libs/fonts/MuseoSansCyrl900.svg#FontName") format("svg");
+  font-style: normal;
+  font-weight: 500; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.center {
+  text-align: center; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 100%; }
+
+/* Styles for popup */
+.popup {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(29, 79, 110, 0.5);
+  top: 0;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed; }
+
+.popup__content {
+  width: 640px;
+  padding: 55px 0;
+  text-align: center;
+  background-color: #fff; }
+
+.popup__title {
+  color: #1D4F6E;
+  font-weight: 500;
+  font-size: 24px; }
+
+.popup__btns {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.popup__accept,
+.popup__cancel {
+  padding: 20px 45px;
+  border: none;
+  margin: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer; }
+
+.popup__accept a,
+.popup__cancel a {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none; }
+
+.popup__accept {
+  background-color: #449732; }
+
+.popup__cancel {
+  background-color: #1D4F6E; }
+
+.popup__instr-content, .popup__expert-content {
+  width: 640px;
+  padding: 55px 20px;
+  background-color: #fff;
+  height: 95%;
+  overflow-y: auto; }
+
+.popup__btn_close {
+  cursor: pointer;
+  content: '';
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-image: url(../img/test/arrow-back-dark.svg); }
+
+.popup__instr-heading, .popup__expert-heading {
+  text-align: center;
+  color: #1D4F6E;
+  font-size: 32px; }
+
+.popup__instr-subtitle {
+  margin-top: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #449732;
+  text-align: center; }
+
+.popup__instr-carousel-wr {
+  margin-top: 30px;
+  padding: 22px;
+  border: 2px solid #1D4F6E; }
+
+.popup__carousel-text {
+  margin-top: 25px; }
+
+.popup__carousel-text:nth-child(1) {
+  margin-top: 0; }
+
+.popup__carousel-color {
+  color: #449732; }
+
+.popup__expert-content {
+  display: none;
+  height: auto; }
+
+.popup-expert-img {
+  display: block;
+  margin: 35px auto; }
+
+.popup-expert-text:before {
+  display: block;
+  content: "";
+  width: 152px;
+  height: 3px;
+  background-color: #449732;
+  margin-bottom: 25px; }
+
+.popup-expert-text {
+  color: #1D4F6E;
+  font-size: 24px;
+  position: relative; }
+
+.popup-expert-text:after {
+  display: block;
+  content: "";
+  width: 152px;
+  height: 3px;
+  background-color: #449732;
+  margin-top: 25px;
+  position: absolute;
+  right: 0; }
+
+body {
+  font-family: "MuseoSansCyrl", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  min-height: 100%;
+  letter-spacing: -0.02em; }
+
+header {
+  color: #fff; }
+
+.hidden-content {
+  display: none; }
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  height: 900px;
+  background-image: url(../img/test/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 565px;
+  padding-top: 50px;
+  position: relative; }
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.header__arrow-back-link {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-image: url(../img/test/arrow-back.svg); }
+
+.header__logo-gastro-wr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative; }
+
+.header__logo-gastro-header {
+  font-weight: 900;
+  font-size: 30px;
+  margin-right: 25px; }
+
+.header__logo-gastro-text:before {
+  height: 30px;
+  margin-left: -12px;
+  width: 1px;
+  content: "";
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 3px; }
+
+.header__logo-gastro-text {
+  width: 230px;
+  font-size: 15px;
+  line-height: 0.98;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.header__middle {
+  margin: 260px auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 320px; }
+
+.header__quiz-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%; }
+
+.header__quiz-text {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 53px; }
+
+.header__quiz-text span {
+  font-size: 52px;
+  line-height: 41px; }
+
+.header__quiz-pic {
+  margin: 0 5px; }
+
+.header__quiz {
+  width: 100%;
+  font-weight: 600;
+  font-size: 52px; }
+
+.header__rules {
+  width: 100%;
+  margin-top: 30px; }
+
+.header__rules-link {
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration: underline;
+  color: #fff; }
+
+.header__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.header__footer-top {
+  background: rgba(68, 151, 50, 0.8); }
+
+.header__quiz-footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 15px; }
+
+.header__footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(29, 79, 110, 0.8); }
+
+.header__logo-acare {
+  margin-right: 30px; }
+
+.header__copyright {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.3); }
+
+.main {
+  width: 1000px; }
+
+.main__container {
+  padding: 40px 80px 80px 80px;
+  width: 100%; }
+
+.main__help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.main__help a {
+  padding: 10px 13px;
+  border: 2px solid #449732;
+  border-radius: 40px;
+  color: #1D4F6E;
+  font-size: 14px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.main__help img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; }
+
+.main__middle {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  margin-top: 80px; }
+
+.main__num-quest {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #449732; }
+
+.main__timer {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 36px;
+  color: #1D4F6E; }
+
+.main__score-link {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #449732;
+  text-decoration: none; }
+
+.main__score-link span {
+  text-decoration: underline; }
+
+.main__score-num {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none !important; }
+
+.main__quiz {
+  margin-top: 20px; }
+
+.main__heading {
+  font-weight: 600;
+  font-size: 32px;
+  color: #292929; }
+
+.main__list {
+  margin-top: 35px; }
+
+.main__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px 80px 20px 30px;
+  background: #F7F7F7;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.main__list-alph {
+  font-size: 18px;
+  line-height: 22px;
+  color: #1D4F6E;
+  margin-right: 20px; }
+
+.main__list-item span:nth-child(2) {
+  width: 95%;
+  display: inline-block; }
+
+.main__list-item-true .main__list-alph,
+.main__list-item-false .main__list-alph {
+  color: rgba(255, 255, 255, 0.6); }
+
+.main__list-item:after {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/test/check.svg);
+  visibility: hidden; }
+
+.main__list-item-true:after,
+.main__list-item-false:after {
+  visibility: visible; }
+
+.main__list-item-true {
+  background-color: #449732;
+  color: #fff; }
+
+.main__list-item-false {
+  background-color: #C80A0A;
+  color: #fff; }
+
+/* Owl dots */
+.owl-dots {
+  display: block !important; }
+
+.owl-dots button.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: transparent !important;
+  border: 1px solid #1D4F6E !important;
+  margin-right: 12px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.owl-dots button.active {
+  background: #1D4F6E !important; }

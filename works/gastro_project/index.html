@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Гастро - Викторина</title>
+
+	<!--
+
+	<link rel="icon" href="//wayup.in/assets/templates/wp/images/logo-footer.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="//wayup.in/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
+
+-->
+
+
+	<!-- 
+
+	<meta name="description" content="Описание страницы для поисковых систем">
+	<meta name="keywords" content="Наиболее важные ключевые слова страницы для поисковых систем">
+
+-->
+
+
+<script src="libs/js/jquery-3.2.1.min.js"></script>
+
+
+<link rel="stylesheet" href="libs/css/owl.carousel.min.css">
+<link rel="stylesheet" href="libs/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/__header.css">
+<link rel="stylesheet" href="css/__main-media.css">
+
+<script src="libs/js/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+<body onhashchange="checkHash()">
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__wr">
+					<div class="header__logo-care-wr">
+						<img src="img/main/logo_care.png" alt="Logotype" class="header__logo-care">
+					</div>
+					<div class="header__logo-abbott-wr">
+						<img src="img/main/logo_abbot.png" alt="Logotype" class="header__logo-abbott">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<div class="container">
+				<div class="header__account-wr">
+					<div class="header__logo-gastro-wr">
+						<span class="header__logo-gastro-header">
+							Гастросайт
+						</span>
+						<p class="header__logo-gastro-text">
+							Гастроэнтерологический <br>информационный портал
+						</p>
+					</div>
+					<div class="header__log-in-wr">
+						<a href="#" class="header__log-in-link">
+							Войти на сайт
+						</a>
+						<img src="img/main/log-icon.png" alt="Profile" class="header__log-in-pic">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="container_mobile"></section>
+	<section class="main">
+		<div class="container clearfix" id="appendDesctop">
+			<div class="main__left-part">
+				<div class="main__heading-wr">
+					<h1 class="main__heading">
+						Викторина
+					</h1>
+					<span class="main__levels"><a href="#" class="main__levels-link">Уровни</a></span>
+				</div>
+				<div class="main__slider-nav">
+					<a href="#slide1" id="slider-link-1" class="main__slider-link main__slider-link-active">
+						Правила викторины
+					</a>
+					<a href="#slide2" id="slider-link-2" class="main__slider-link">
+						Порядок начисления баллов
+					</a>
+					<a href="#slide3" id="slider-link-3" class="main__slider-link">
+						Подсказки
+					</a>
+				</div>
+				<div class="main__slider owl-carousel">
+				     <div class="main__rules" data-hash="slide1">
+				          <ul class="main__list">
+				          	<li class="main__item">
+				          		Для прохождения теста игрок должен авторизоваться на сайте, чтобы в случае победы бонусные баллы были зачислены на его счет в личном кабинете. 
+				          	</li>
+				          	<li class="main__item" >
+				          		Для ответа на каждый вопрос игроку дается ограниченное время – 30 секунд (временное ограничение не дает возможности пользователю искать ответ на вопрос в интернете и способствует принятию самостоятельного решения).
+				          	</li>
+				          </ul>
+				     </div>
+				     <div class="main__score" data-hash="slide2">
+				          <ul class="main__list" >
+				          	<li class="main__item">
+				          		Для прохождения теста игрок должен авторизоваться на сайте, чтобы в случае победы бонусные баллы были зачислены на его счет в личном кабинете. 
+				          	</li>
+				          	<li class="main__item">
+				          		Для ответа на каждый вопрос игроку дается ограниченное время – 30 секунд (временное ограничение не дает возможности пользователю искать ответ на вопрос в интернете и способствует принятию самостоятельного решения).
+				          	</li>
+				          </ul>
+				          
+				     </div>
+				     <div class="main__help" data-hash="slide3">
+				          <ul class="main__list">
+				          	<li class="main__item">
+				          		<p class="main__item-help">«‎Инструкция»‎</p>  Открывается окно с инструкцией по применению. Время для прочтения останавливается или дается дополнительно. Доступ к инструкции постоянный, при использовании не блокируется.
+				          	</li>
+				          	<li class="main__item">
+				          		<p class="main__item-help">«‎50:50»‎</p>  После использования подсказки 50 на 50 игровой компьютер убирает два заведомо ложных варианта, оставляя игроку один верный ответ и один неверный.
+				          	</li>
+				          	<li class="main__item">
+				          		<p class="main__item-help">«‎15 сек»‎</p>  Добаляет 15 секунд для ответа на вопрос.
+				          	</li>
+				          	<li class="main__item">
+				          		<p class="main__item-help">«‎Совет эксперта»‎</p>  К каждому вопросу заранее готов комментарий медицинского эксперта с подсказкой верного варианта ответа.
+				          	</li>
+				          </ul>
+				     </div>
+				</div>
+				<button id="main__button-next" class="main__button-next">
+				     	Далее
+				</button>
+			</div>
+			<div id="right_bar" class="main__right-part">
+				<object class="main__right-bg"  type="image/svg+xml" data="img/main/main-right-logo.svg" >
+				 	<img src="img/main/main-right-logo.png" alt="image format png">
+				</object>
+			</div>
+		</div>
+	</section>
+	<section class="popup" id="popup" style="visibility: hidden;">
+		<div class="popup__content">
+			<h3 class="popup__title">
+				Начать викторину?
+			</h3>
+			<div class="popup__btns">
+				<button class="popup__accept"><a href="pages/test.html" class="popup__accept-link">Играть</a></button>
+				<button class="popup__cancel">Отмена</button>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
