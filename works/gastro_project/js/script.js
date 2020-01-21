@@ -88,10 +88,10 @@ function nextSlide(){
 
 function popup() {
   var popup_content = document.getElementById("popup");
-  if (popup_content.style.visibility == "hidden") {
-    popup_content.style.visibility = "visible";
+  if (popup_content.style.display == "none") {
+    popup_content.style.display = "flex";
   } else {
-    popup_content.style.visibility = "hidden";
+    popup_content.style.display = "none";
   }
 }
 
