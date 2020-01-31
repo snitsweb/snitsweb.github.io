@@ -1,182 +1,381 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MYPORTFOLIO</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Твой Любимый Фитнеc-клуб IloveFit</title>
+
+	<!--
+
+	<link rel="icon" href="//wayup.in/assets/templates/wp/images/logo-footer.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="//wayup.in/assets/templates/wp/images/logo-footer.png" type="image/x-icon">
+
+-->
+
+
+	<!-- 
 
 	<meta name="description" content="Описание страницы для поисковых систем">
 	<meta name="keywords" content="Наиболее важные ключевые слова страницы для поисковых систем">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+-->
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-	<script src="js/script.js"></script>
 
+
+
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/media.css">
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<script src="https://kit.fontawesome.com/da280532b2.js" crossorigin="anonymous"></script>
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="js/script.js"></script>
 </head>
 <body>
-	<section id="main-screen">
-		<article class="main-screen--wrapper">
-			<div class="main-screen--header clearfix">
-				<span class="main-screen--logo">
-					<b>my</b>portfolio
-				</span>
-				<nav>
-					<ul class="main-screen--navigation">
-						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_1">обо мне</a></li>
-						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_2">навыки</a></li>
-						<li class="main-screen--nav-item"><a href="#" class="main-screen--nav-link link_3">работы</a></li>
-					</ul>
-				</nav>
-				<a href="mailto:oleksnitsaruk@gmail.com" class="main-screen--email">oleksnitsaruk@gmail.com</a>
-			</div>
-			<h1 class="wow fadeIn">
-				Дело, которым я живу
-			</h1>
-			<h2 class="main-screen--subtitle wow fadeIn">
-				верстка & Дизайн
-			</h2>
-			<a class="main-screen--button-href"></a>
-		</article>
-	</section>
-	<section id="about-me">
-		<article class="about-me--wrapper clearfix wow fadeIn" data-wow-offset:"100">
-			<h2 class="about-me--heading">
-				обо мне
-			</h2>
-			<div class="about-me--content-block1">
-				<h3 class="about-me--subtitle">бэкграунд</h3>
-				<p class="about-me--bg-text">
-					Здравствуйте, меня зову <b>Александр Сницарук</b>, мне 17 лет и я занимаюсь версткой с 2017 года
-				</p>
-				<p class="about-me--bg-text">
-					Владею языками разметки и стилей, такими, как <b>HTML5</b> и <b>CSS3</b>, а также языком программирования <b>JavaScript (ECMAScript 6)</b>. В своих проектах использую такие технологии, как <b>Flexbox</b> и <b>Grid</b>, <b>SCSS</b>, <b>Jquery</b>, разные плагины для дополнения и создания WoW-эффекта вашего сайта.
-					Также владею навыками тайм-менеджмента, семантической верстки, SEO-оптимизаци.
-				</p>
-				<p class="about-me--bg-text">
-					Настрою отправку e-mail писем, оптимизирую скорость загрузки сайта в Google PageSpeed (зеленая зона). Делаю валидную, адптивную верстку с чистым кодом.
-				</p>
-			</div>
-			<div class="about-me--content-block2 ">
-				<h3 class="about-me--subtitle">Заслуги</h3>
-				<div class="about-me--merit">
-					<img src="img/about-merit.png" alt="rhomb" class="about-me--merit-bg">
-					<span class="about-me--numbers numbers-1">6</span>
-					<h3 class="about-me--merit-subtitle">Реализованных<br> проектов</h3>
-				</div>
-				<div class="about-me--merit">
-					<img src="img/about-merit.png" alt="rhomb" class="about-me--merit-bg">
-					<span class="about-me--numbers numbers-2">5</span>
-					<h3 class="about-me--merit-subtitle">Положительных<br> отзывов</h3>
-				</div>
-				<div class="about-me--merit">
-					<img src="img/about-merit.png" alt="rhomb" class="about-me--merit-bg">
-					<span class="about-me--numbers numbers-3">3</span>
-					<h3 class="about-me--merit-subtitle">Года<br> опыта</h3>
+	<header class="header">
+		<div class="header__wr container">
+			<div class="header__logo-wr">
+				<img src="img/logo.png" alt="Logo" class="header__logo">
+				<div class="header__page-heading">
+					На этом месте <br> заголовок сайта
 				</div>
 			</div>
-			<div class="about-me--content-block3">
-				<h3 class="about-me--subtitle">Связь</h3>
-				<ul class="about-me--communication">
-					<li class="comm-li1">
-						<a href="https://www.weblancer.net/users/SnitsWeb/" class="about-me--comm-link">
-							Фриланс биржа
+			<div class="header__num-wr">
+				<div class="header__num">
+					8 (800) 
+					<span class="header__num-bold">555-33-54</span>
+				</div>
+				<a href="#" class="header__action-bth">
+					Обратный звонок
+				</a>
+			</div>
+		</div>
+		<div class="container content-wr">
+			<div class="main">
+				<div class="main__content">
+					<h1 class="main__heading">
+						твой любимый
+						Фитнеc-клуб IloveFit
+					</h1>	
+					<p class="main__text">
+						Запишись <strong>на бесплатную тренировку</strong> и мы покажем тебе <br>
+						как все у нас устроенно, какие мы используем тренажеры и ты сам все 
+						испытаешь на себе.
+					</p>
+					<div class="main__form-wr">
+						<form action="#" class="main__form">
+							<div class="main__input-wrapper">
+								<input name="name" class="main__form-item" type="text" name="name" placeholder="Ваше имя:">
+								<object class="main__form-icons" type="image/svg+xml" data="img/user.svg">
+									<img src="img/user.png">
+								</object>
+							</div>
+							<div class="main__input-wrapper">
+								<input name="phone" class="main__form-item" type="tel" name="phone" placeholder="Телефон:">
+								<object class="main__form-icons" type="image/svg+xml" data="img/phone.svg">
+									<img src="img/phone.png">
+								</object>
+							</div>
+							<button class="main__form-btn" type="submit">
+								Записаться на бесплатную тренировку
+							</button>
+						</form>
+					</div>
+					<a href="#" class="main__action-bth">
+						Записаться на бесплатную тренировку
+					</a>
+					<div class="main__social">
+						<span class="main__social-text">
+							Мы в социальных сетях: 
+						</span>
+						<a href="#" class="main__social-link">
+							<object type="image/svg+xml" data="img/vk.svg">
+								<img src="img/vk.png">
+							</object>
 						</a>
+						<a href="#" class="main__social-link">
+							<object type="image/svg+xml" data="img/facebook.svg">
+								<img src="img/facebook.png">
+							</object>
+						</a>
+						<a href="#" class="main__social-link">
+							<object type="image/svg+xml" data="img/instagram.svg">
+								<img src="img/instagram.png">
+							</object>
+						</a>
+					</div>
+					<img src="img/main-girl.png" class="main__girl-img">
+				</div>
+			</div>
+		</div>
+		<div class="main__tour-wr">
+			<a href="#" class="main__tour-link"><span class="main__tour-text">
+				Гостевой тур по клубу
+			</span>
+			<object class="main__tour-img" type="image/svg+xml" data="img/mouse.svg">
+				<img src="img/mouse.png">
+			</object></a>
+		</div>
+	</header>
+	<section class="equip">
+		<div class=" container equip__wrapper">
+			<div class="equip__img-wr">
+				<img src="img/equip-img.png" alt="Sport" class="equip__img">
+			</div>
+			<div class="equip__content">
+				<h2 class="equip__heading">
+					ПРОФЕССИОНАЛЬНОЕ <br> ОСНАЩЕНИЕ И КОМФОРТ
+				</h2>
+				<ul class="equip__list">
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-1.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Тренажёрный зал
+							</h3>
+							<p class="equip__item-text">
+								Самый большой и оснащенный тренажерный зал в городе площадью 600 кв. м.
+							</p>
+						</div>
 					</li>
-					<li  class="comm-li2">
-						<a href="https://www.instagram.com/snits.web/?hl=uk" class="about-me--comm-link">Instagram</a>
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-2.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Женские направления
+							</h3>
+							<p class="equip__item-text">
+								Отдельные программы для женщин и профессиональные тренеры
+							</p>
+						</div>
+					</li>
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-3.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Обширная кардиозона
+							</h3>
+							<p class="equip__item-text">
+								Не стойте в очередях на беговую дорожку. У нас большое кол. тренажеров.
+							</p>
+						</div>
+					</li>
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-4.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Профессиональный ринг
+							</h3>
+							<p class="equip__item-text">
+								Занимайтесь не только фитнесом! В нашем зале есть профессиональная зона единоборств.
+							</p>
+						</div>
+					</li>
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-5.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Проведение турниров
+							</h3>
+							<p class="equip__item-text">
+								В нашем клубе проводятся чемпионаты России и Европы по пауэрлифтингу.
+							</p>
+						</div>
+					</li>
+					<li class="equip__item">
+						<img class="equip__item-img" src="img/equip-item-6.png" alt="icon">
+						<div class="equip__item-content">
+							<h3 class="equip__item-heading">
+								Детские направления
+							</h3>
+							<p class="equip__item-text">
+								Присутствуют спортивные программы для детей разного возраста.
+							</p>
+						</div>
 					</li>
 				</ul>
-				<div class="about-me--communication joke-hidden">
-					<img src="img/comm-people.png" alt="people" class="about-me--comm-img">
-					<span class="about-me--not-shy">
-						Не стесняйтесь, пишите
+				<div class="equip__banner-wr">
+					<div class="equip__banner-content">
+						<span class="equip__banner-text">
+							Запишитесь на бесплатную пробную тренировку
+						</span>
+						<a class="equip__banner-link">
+							Записаться
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tour">
+		<div class="container">
+			<div class="tour__main">
+				<h2 class="tour__heading">
+					Запишитесь на бесплатный гостевой тур
+				</h2>
+				<div class="tour__list-wr">
+					<ul class="tour__list">
+						<li class="tour__item">
+							<img src="https://img.icons8.com/ios/50/000000/checked.png">
+							Обширная кардио - зона
+						</li>
+						<li class="tour__item">
+							<img src="https://img.icons8.com/ios/50/000000/checked.png">
+							Зона единоборств
+						</li>
+					</ul>
+					<ul class="tour__list">
+						<li class="tour__item">
+							<img src="https://img.icons8.com/ios/50/000000/checked.png">
+							Парковка
+						</li>
+						<li class="tour__item">
+							<img src="https://img.icons8.com/ios/50/000000/checked.png">
+							Профессиональное оборудование
+						</li>
+					</ul>
+				</div>
+				<form class="tour__form">
+					<div class="tour__input-wr">
+						<input name="name" class="tour__input" type="text" placeholder="Ваше имя:">
+						<object class="tour__form-icons" type="image/svg+xml" data="img/user.svg">
+							<img src="img/user.png">
+						</object>
+					</div>
+					<div class="tour__input-wr">
+						<input name="phone" class="tour__input" type="tel" placeholder="Телефон:">
+						<object class="tour__form-icons" type="image/svg+xml" data="img/phone.svg">
+							<img src="img/phone.png">
+						</object>
+					</div>
+					<div class="tour__input-wr">
+						<input name="number" class="tour__input" type="text" placeholder="Кол-во гостей:">
+						<object class="tour__form-icons" type="image/svg+xml" data="img/guests.svg">
+							<img src="img/guests.png">
+						</object>
+					</div>
+					<div class="tour__form-btn-wr">
+						<button type="submit" class="tour__main-btn">
+							Записаться
+						</button>
+						<p class="tour__agreement">
+							Нажимая на кнопку “Записаться” я даю свое согласие на обработку 
+							<a href="#" class="tour__agreement-link">персональных даных</a>
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="tour__img-wr">
+				<img src="img/tour.png" alt="image" class="tour__img">
+			</div>
+		</div>
+	</section>
+	<section class="trainers">
+		<div class="container">
+			<div class="trainers__wr">
+				<h2 class="trainers__heading">
+					Тренера фитнес-цента
+				</h2>
+				<div class="trainers__slider">
+					<div class="trainers__slide-item">
+						<img src="img/trainers/1.png" alt="Portret" class="trainers__portret">
+						<h3 class="trainers__name">
+							Гудиева Алина
+						</h3>
+						<span class="trainers__job">
+							персональный тренер
+						</span>
+						<span class="trainers__experience">
+							<span class="experience-bold">Стаж:</span> 5 лет
+						</span>
+						<a href="#" class="trainers__bth">
+							Задать вопрос
+						</a>
+						<a href="#" class="trainers__write">
+							Записаться к тренеру
+						</a>
+					</div>
+
+					<div class="trainers__slide-item">
+						<img src="img/trainers/2.png" alt="Portret" class="trainers__portret">
+						<h3 class="trainers__name">
+							Акименко Данил
+						</h3>
+						<span class="trainers__job">
+							персональный тренер
+						</span>
+						<span class="trainers__experience">
+							<span class="experience-bold">Стаж:</span> 5 лет
+						</span>
+						<a href="#" class="trainers__bth">
+							Задать вопрос
+						</a>
+						<a href="#" class="trainers__write">
+							Записаться к тренеру
+						</a>
+					</div>
+
+					<div class="trainers__slide-item">
+						<img src="img/trainers/3.png" alt="Portret" class="trainers__portret">
+						<h3 class="trainers__name">
+							Маняков Владислав
+						</h3>
+						<span class="trainers__job">
+							персональный тренер
+						</span>
+						<span class="trainers__experience">
+							<span class="experience-bold">Стаж:</span> 5 лет
+						</span>
+						<a href="#" class="trainers__bth">
+							Задать вопрос
+						</a>
+						<a href="#" class="trainers__write">
+							Записаться к тренеру
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="offer">
+		<div class="container">
+			<div class="offer__wr">
+				<h2 class="offer__heading">
+					Собери свой абонимент
+				</h2>
+				<p class="offer__subtitle">
+					и получите расчет стоимости
+				</p>
+				<h3 class="offer__quest">
+					В какое время Вы хотите ходить ?
+				</h3>
+				<div class="offer__list">
+					<div class="offer__item offer__active">
+						<img src="img/offer/1.png" alt="Image" class="offer__img"><span class="offer__text">Днем (с 07:00 до 17:00)</span>
+					</div>
+					<div class="offer__item">
+						<img src="img/offer/2.png" alt="Image" class="offer__img"><span class="offer__text">Вечером (с 17:00 до 23:00)</span>
+					</div>
+					<div class="offer__item">
+						<img src="img/offer/3.png" alt="Image" class="offer__img"><span class="offer__text">В любое время (безлимит)</span>
+					</div>
+				</div>
+				<div class="offer__btn-wr">
+					<a href="#" class="offer__btn">
+						Выбрать период
+					</a>
+					<span class="offer__step">
+						Шаг: 1 из 3
 					</span>
 				</div>
 			</div>
-		</article>
-	</section>
-	<section id="skills">
-		<article class="skills--wrapper clearfix wow fadeInLeft" data-wow-offset:"100">
-			<h2 class="skills--heading">Навыки</h2>
-			<div class="skills--item-skill">
-				<img src="img/skills-item-bg.png" alt="skills cyrcle" class="skills--img-bg-item">
-				<span class="skills--percents skills-num-1">98%</span>
-				<span class="skills--name-skill">Photoshop</span>
-			</div>
-			<div class="skills--item-skill">
-				<img src="img/skills-item-bg.png" alt="skills cyrcle" class="skills--img-bg-item">
-				<span class="skills--percents skills-num-2">99%</span>
-				<span class="skills--name-skill">html5</span>
-			</div>
-			<div class="skills--item-skill">
-				<img src="img/skills-item-bg.png" alt="skills cyrcle" class="skills--img-bg-item">
-				<span class="skills--percents skills-num-3">100%</span>
-				<span class="skills--name-skill">CSS3</span>
-			</div>
-			<div class="skills--item-skill">
-				<img src="img/skills-item-bg.png" alt="skills cyrcle" class="skills--img-bg-item">
-				<span class="skills--percents skills-num-4">0%</span>
-				<span class="skills--name-skill">Лень</span>
-			</div>
-		</article>
-	</section>
-	<section id="portfolio">
-		<article class="portfolio--wrapper clearfix wow zoomIn" data-wow-offset:"500">
-			<h2 class="portfolio--heading">Работы</h2>
-			<div class="portfolio--item clearfix">
-				<img src="img/portf-1.png" alt="" class="porfolio--preview">
-				<div class="portfolio--overlay">
-					<h3 class="portfolio--item-heading">Верстка сайт йоги</h3>
-					<a href="sites/yoga/index.html" class="portfolio--item-subtitle">Смотреть</a>
-				</div>
-			</div>
-			<div class="portfolio--item">
-				<img src="img/portf-2.png" alt="" class="porfolio--preview">
-				<div class="portfolio--overlay">
-					<h3 class="portfolio--item-heading">Верстка сайта игр</h3>
-					<a href="sites/freegm/index.html" class="portfolio--item-subtitle">Смотреть</a>
-				</div>
-			</div>
-			<div class="portfolio--item">
-				<img src="img/portf-3.png" alt="" class="porfolio--preview">
-				<div class="portfolio--overlay">
-					<h3 class="portfolio--item-heading">Дизайн сайта турагенства</h3>
-					<a href="sites/designs/ol-travel.jpg" class="portfolio--item-subtitle">Смотреть</a>
-				</div>
-			</div>
-			<div class="portfolio--item">
-				<img src="img/portf-4.png" alt="" class="porfolio--preview">
-				<div class="portfolio--overlay">
-					<h3 class="portfolio--item-heading">Верстка с шаблона Templatemaster</h3>
-					<a href="sites/templatemont/index.html" class="portfolio--item-subtitle">Смотреть</a>
-				</div>
-			</div>
+		</section>
+	</body>
+	</html>
 
-			<div class="portfolio--item">
-				<img src="img/portf-5.png" alt="" class="porfolio--preview">
-				<div class="portfolio--overlay">
-					<h3 class="portfolio--item-heading">Верстка викторины Гастрологика</h3>
-					<a href="sites/gastro_project/index.html" class="portfolio--item-subtitle">Смотреть</a>
-				</div>
-			</div>
 
-		</article>
-	</section>
-	<footer>
-		<article class="footer-wrapper">
-			<span>2017-2099 / Смотрю в будущее</span>
-		</article>
-	</footer>
-
-	<script>
-    	new WOW().init();
-	</script>
-</body>
-</html>
