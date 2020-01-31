@@ -1,53 +1,20 @@
-$(document).ready(function(){
+$(document).ready(function() {
+	$('.main-screen--button-href').click(function(){
+       $('html, body').animate({scrollTop:$('#about-me').position().top}, 1200);
+    });
 
-  $('.trainers__slider').slick({
-  	centerMode: true,
- 	centerPadding: '100px',
-  	slidesToShow: 2,
-  	infinite: true,
-  	variableWidth: true,
-  	responsive: [
-    {
-      breakpoint: 950,
-      settings: {
-        slidesToShow: 1,
-        variableWidth: false,
-        centerPadding: '0px'
-      	}
-  	}]
-  });
+    $('.link_1').click(function(){
+       $('html, body').animate({scrollTop:$('#about-me').position().top}, 1200);
+    });
 
-  //-------------Buttons------------
+    $('.link_2').click(function(){
+       $('html, body').animate({scrollTop:$('#skills').position().top}, 1200);
+    });
 
-  var act_btn = $('.slick-current .trainers__bth');
-  changeBtn();
+    $('.link_3').click(function(){
+       $('html, body').animate({scrollTop:$('#portfolio').position().top}, 1200);
+    });
 
-  $('.trainers__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  		act_btn.css('background-color','transparent');
- 		act_btn.css('color','#f7a600');
-  });
-
-  $('.trainers__slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
- 		act_btn = $('.slick-current .trainers__bth');
- 		changeBtn();
-	});
-
-	function changeBtn(){
-		act_btn.css('background-color','#f7a600');
-		act_btn.css('color','#fff');
-	}
-
-	//---------------Arrows---------
-
-	$('.slick-prev').html('<span>&#8592;</span>');
-	$('.slick-next').html('<span>&#8594;</span>');
-
-  //-------------Offer selecter--------
-
-  $('.offer__item').click(offerSelect);
 });
 
-function offerSelect(){
-  $('.offer__item').removeClass('offer__active');
-  $(this).addClass('offer__active');
-}
+
