@@ -1,0 +1,23 @@
+$blue: #1D4F6E;
+
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 40px;
+	height: 100%;
+}

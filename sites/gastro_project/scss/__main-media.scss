@@ -1,0 +1,155 @@
+@media screen and (max-width: 1360px) {
+	.main__right-part{
+		width: 45%;
+	}
+
+	.main__left-part{
+		width: 50%;
+		padding: 40px 0 0px 0;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.main__slider-nav{
+		margin-top: 25px;
+	}
+
+	.main__slider-link{
+		margin-top: 10px;
+		display: inline-block;
+	}
+
+	.main__right-part{
+		padding: 0 15px;
+	}
+
+	.main__right-bg{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 766px){
+	.main__left-part{
+		width: 100%;
+	}
+
+	.main__left-part{
+		padding: 40px 0 60px 0;
+	}
+
+	#popup,
+	#popup .popup__content{
+		width: 95vw;
+	}	
+}
+
+
+@media screen and (max-width: 670px){
+
+	.main .container{
+		max-width: 670px;
+		padding: 0 40px;
+	}
+
+	.container{
+		padding: 0 20px;
+	}
+
+	.popup__content{
+		width: 90%;
+	}
+
+	.poput__accept,
+	.poput__cancel{
+		padding: 15px 35px;
+		border: none;
+		margin: 10px;
+		font-size: 15px;
+		color: #fff;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.main .container{
+		padding: 0 20px;
+	}
+	.main__slider-nav{
+		text-align: center;
+	}
+
+	.main__slider-link{
+		font-size: 14px;
+		margin-top: 30px;
+		line-height: 125%;
+	}
+
+	#popup{
+		max-height: none;
+		padding: 25px 40px;
+		height: auto;
+		padding: 0;
+	}
+
+	#popup .popup__btns{
+		margin-top: 30px;
+	}
+	
+	#popup .popup__title{
+		font-size: 14px;
+	}
+
+	#popup .popup__accept,
+	#popup .popup__cancel{
+		padding: 8px 23px;
+		font-size: 12px;
+		width: auto;
+	}
+
+	#popup .popup__content{
+		padding:28px 40px;
+	}
+
+	.main__heading{
+		font-size: 24px;
+		color: #449732;
+	}
+
+	.main__levels-link{
+		visibility: visible;
+	}
+	
+	.main__item:before{
+		margin-left: -30px;
+	}
+
+	.main__list .main__item{
+		margin-top: 0px;
+	}
+
+	.main__item{
+		font-size: 12px;
+		padding-left: 30px;
+		line-height: 20px;
+		margin-top: 30px;
+	}
+	.main__button-next{
+		display: block;
+   		margin: 40px auto auto;
+   		padding: 15px 45px;
+	}
+
+	// Styles for Owl Carousel
+	.main__slider{
+		position: relative;
+   		margin-top: 20px;
+	}
+
+	.owl-dots{
+		display: flex;
+		justify-content: center;
+		position: absolute;
+    	width: 100%;
+    	top: -65px;
+	}
+}

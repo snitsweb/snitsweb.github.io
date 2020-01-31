@@ -1,0 +1,117 @@
+@import "reset.scss";
+
+.header__top{
+	height: 90px;
+	background-color:#1D4F6E;
+}
+
+.header__wr{
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.header__logo-care-wr{
+	margin-right: 40px;
+}
+
+.header__bottom{
+	background-color: #449732;
+	color: #fff;
+}
+
+.header__account-wr{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 65px;
+}
+
+.header__logo-gastro-wr{
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.header__logo-gastro-header{
+	font-weight: 900;
+	font-size: 30px;
+	margin-right: 25px;
+}
+
+.header__logo-gastro-text:before{
+	height: 30px;
+	margin-left: -12px;
+	width: 1px;
+	content: "";
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	top: 3px;
+}
+
+.header__logo-gastro-text{
+	width: 230px;
+	font-size: 15px;
+	line-height: 0.98;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.header__log-in-link{
+	font-size: 16px;
+	color: #fff;
+	margin-right: 15px;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+
+@media screen and (max-width: 670px) {
+	
+	.container{
+		max-width: 670px;
+	}
+
+	.header__wr{
+		justify-content: center;
+	}
+
+	.header__account-wr{
+		height: auto;
+		justify-content: center;
+		flex-direction: column;
+		padding: 25px 0;
+	}
+
+	.header__log-in-wr{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.container{
+		padding: 0 10px;
+	}
+
+	.header__account-wr{
+		justify-content: center;
+	}
+
+	.header__log-in-wr{
+		display: none;
+	}
+
+	.header__logo-gastro-header{
+		font-size: 20px;
+	}
+
+	.header__logo-gastro-text{
+		font-size: 12px;
+		display: inline-block;
+		width: auto;
+	}
+
+	.header__logo-gastro-text:before{
+		height: 22.4px;
+	}
+}
