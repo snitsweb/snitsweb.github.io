@@ -41,5 +41,13 @@ $(document).ready(function(){
 
 	$('.slick-prev').html('<span>&#8592;</span>');
 	$('.slick-next').html('<span>&#8594;</span>');
+
+  //-------------Offer selecter--------
+
+  $('.offer__item').click(offerSelect);
 });
 
+function offerSelect(){
+  $('.offer__item').removeClass('offer__active');
+  $(this).addClass('offer__active');
+}

@@ -624,5 +624,71 @@ body{
 .offer__subtitle{
 	font-size: 18px;
 	font-weight: 300;
+	margin-top: 15px;
+}
 
+.offer__quest{
+	font-weight: 600;
+	font-size: 21px;
+	margin-top: 30px;
+}
+
+.offer__list{
+	margin-top: 60px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.offer__item{
+	position: relative;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+.offer__text{
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.offer__btn-wr{
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+}
+
+.offer__btn{
+	display: block;
+	font-weight: 800;
+	font-size: 18px;
+	color: #fff;
+	background-color: $orange;
+	padding: 22px 47px;
+	text-decoration: none;
+}
+
+.offer__step{
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: 22px;
+}
+
+.offer__active:before{
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url('../img/offer/icon-selected.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-left: 116px;
+	top: -8px;
+	z-index: 1;
+
+}
+
+.offer__active img{
+	filter: brightness(50%);
 }
