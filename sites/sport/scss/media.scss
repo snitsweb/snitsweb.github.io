@@ -35,6 +35,12 @@
 	.slick-next{
 		right: 0;
 	}
+
+	//-----------Solutions-------
+
+	.solutions:after{
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1250px) {
@@ -52,11 +58,50 @@
 	}
 
 	//-------------EQUIPMENT--------------
+
 	.equip__img{
 		width: 200px;
 		height: auto;
 		position: absolute;
 		top: 0;
+	}
+
+	//--------------SOLUTIONS--------------
+
+	.solutions__card-img{
+		width: 100%;
+	}
+
+	.solutions__item {
+		line-height: 1.4;
+	}
+
+	//-------------REVIEWS-----------
+
+	.reviews__slider{
+		max-width: 700px;
+	}
+
+	.reviews__info-wr{
+		display: flex;
+		justify-content: center;
+		margin-top: 35px;
+	}
+
+	.reviews__left-info,
+	.reviews__right-info{
+		position: static;
+		transform: none;
+	}
+
+	.reviews__slider .slick-arrow{
+		display: none!important;
+	}
+
+	.reviews__info-wr .slick-arrow{
+		position: static;
+		display: block;
+		margin: 0 auto;
 	}
 }
 
@@ -103,6 +148,22 @@
 	.trainers__slide-item{
 		margin: 0 50px;
 	}
+
+	//---------------footer---------
+
+	.footer__wr{
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.footer__social{
+		display: none;
+	}
+
+	.social__hidden{
+		display: flex;
+		margin-top: 50px;
+	}
 }
 
 @media screen and (max-width: 950px) {
@@ -116,6 +177,12 @@
 
 	.tour__img-wr{
 		display: none;
+	}
+
+	//-----------------Solutions----------
+
+	.solutions__card-container {
+	    padding: 45px 30px 40px 30px;
 	}
 
 }
@@ -170,7 +237,46 @@
 		margin-right: 10px;
 	}
 
+	//-------------Solutions--------
+	.solutions{
+		padding: 80px 0;
+	}
 
+	.solutions__heading {
+		font-size: 35px;
+	}
+
+	.solutions__cards{
+		margin-top: 30px;
+	}
+
+	//-----------footer--------
+
+	.footer__wr{
+		flex-direction: column;
+	}
+
+	.footer__num-wr{
+		margin-top: 45px;
+	}
+
+
+}
+
+@media screen and (max-width: 700px) {
+	.solutions__cards{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.solution__card{
+		width: 60%;
+		margin-bottom: 25px;
+	}
+
+	.solution__card:last-child{
+		margin-bottom: 0;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -250,6 +356,12 @@
 	.tour__input-wr{
 		display: block;
 	}
+
+	//--------------Solutions---
+
+	.solution__card{
+		width: 80%;
+	}
 }
 
 @media screen and (max-width: 500px) {
@@ -319,7 +431,43 @@
 		margin-left: 0;
 		margin-top: 50px;
 	}
+
+	//--------------Solutions---
+
+	.solution__card{
+		width: 95%;
+	}
 	
+}
+
+@media screen and (max-width: 420px) {
+
+	//--------------OFFER------
+
+	.offer__img{
+		width: 93px;
+	}
+
+	.offer__active:before{
+		width: 30px;
+		height: 30px;
+		margin-left: 67px;
+		top: -5px;
+	}
+
+	//--------------Solutions---
+
+	.solutions {
+		padding: 100px 0 110px 0;
+	}
+
+	.solutions__heading{
+		font-size: 30px;
+	}
+
+	.solution__card{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -382,5 +530,54 @@
 
 	.equip__heading{
 		font-size: 30px;
+	}
+
+	//------------REVIEWS---------
+
+	.reviews {
+		padding: 110px 0 100px 0;
+	}
+
+	.reviews__heading{
+		font-size: 30px;
+	}
+
+	.reviews__slider{
+		margin-top: 50px;
+	}
+
+	//------------CONTACTS----------
+
+	.contacts{
+		padding: 325px 0 90px 0;
+		background-position: 71% -200px;
+		text-align: center;
+		filter: saturate(2);
+		font-size: 15px;
+	}
+
+	.contacts__heading{
+		font-size: 30px;
+	}
+
+	.contacts__time-text{
+		max-width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contacts__main-btn{
+		font-size: 18px;
+	}
+
+	//------------FOOTER---------
+
+	.footer__num-wr{
+		font-size: 15px;
+	}
+
+	.footer__btn{
+		padding: 25px;
+		font-size: 13px;
 	}
 }
