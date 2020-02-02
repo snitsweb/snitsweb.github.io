@@ -34,6 +34,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="js/script.js"></script>
+<script src="js/popup.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -49,7 +50,7 @@
 					8 (800) 
 					<span class="header__num-bold">555-33-54</span>
 				</div>
-				<a href="#" class="header__action-bth">
+				<a href="#" class="header__action-bth popup-btn" data-form="popup-callback">
 					Обратный звонок
 				</a>
 			</div>
@@ -80,12 +81,12 @@
 									<img src="img/phone.png">
 								</object>
 							</div>
-							<button class="main__form-btn" type="submit">
+							<button class="main__form-btn form-btn" type="submit">
 								Записаться на бесплатную тренировку
 							</button>
 						</form>
 					</div>
-					<a href="#" class="main__action-bth">
+					<a href="#" class="main__action-bth popup-btn" data-form="popup-free-training">
 						Записаться на бесплатную тренировку
 					</a>
 					<div class="main__social">
@@ -203,7 +204,7 @@
 						<span class="equip__banner-text">
 							Запишитесь на бесплатную пробную тренировку
 						</span>
-						<a href="#" class="equip__banner-link">
+						<a href="#" class="equip__banner-link popup-btn" data-form="popup-free-training">
 							Записаться
 						</a>
 					</div>
@@ -293,10 +294,10 @@
 						<span class="trainers__experience">
 							<span class="experience-bold">Стаж:</span> 5 лет
 						</span>
-						<a href="#" class="trainers__bth">
+						<a href="#" class="trainers__btn popup-btn" data-form="popup-form-quest">
 							Задать вопрос
 						</a>
-						<a href="#" class="trainers__write">
+						<a href="#" class="trainers__write popup-btn" data-form="popup-write">
 							Записаться к тренеру
 						</a>
 					</div>
@@ -312,10 +313,10 @@
 						<span class="trainers__experience">
 							<span class="experience-bold">Стаж:</span> 5 лет
 						</span>
-						<a href="#" class="trainers__bth">
+						<a href="#" class="trainers__btn popup-btn" data-form="popup-form-quest">
 							Задать вопрос
 						</a>
-						<a href="#" class="trainers__write">
+						<a href="#" class="trainers__write popup-btn" data-form="popup-write">
 							Записаться к тренеру
 						</a>
 					</div>
@@ -331,10 +332,10 @@
 						<span class="trainers__experience">
 							<span class="experience-bold">Стаж:</span> 5 лет
 						</span>
-						<a href="#" class="trainers__bth">
+						<a href="#" class="trainers__btn popup-btn" data-form="popup-form-quest">
 							Задать вопрос
 						</a>
-						<a href="#" class="trainers__write">
+						<a href="#" class="trainers__write popup-btn" data-form="popup-write">
 							Записаться к тренеру
 						</a>
 					</div>
@@ -423,7 +424,7 @@
 								<span class="solutions__price">
 									2 000 ₽ / мес.
 								</span>
-								<a href="#" class="solutions__main-btn">
+								<a href="#" class="solutions__main-btn popup-btn" data-form="popup-calc">
 									Рассчитать стоимость
 								</a>
 							</div>
@@ -469,7 +470,7 @@
 								<span class="solutions__price">
 									2 500 ₽ / мес.
 								</span>
-								<a href="#" class="solutions__main-btn">
+								<a href="#" class="solutions__main-btn popup-btn" data-form="popup-calc">
 									Рассчитать стоимость
 								</a>
 							</div>
@@ -515,7 +516,7 @@
 								<span class="solutions__price">
 									3 300 ₽ / мес.
 								</span>
-								<a href="#" class="solutions__main-btn">
+								<a href="#" class="solutions__main-btn popup-btn" data-form="popup-calc">
 									Рассчитать стоимость
 								</a>
 							</div>
@@ -577,7 +578,7 @@
 							<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><span>→</span></button>
 						</div>
 					</div>
-					<a href="#" class="reviews__main-btn">Оставить отзыв</a>
+					<a href="#" class="reviews__main-btn popup-btn" data-form="popup-reviews">Оставить отзыв</a>
 				</div>
 			</div>
 		</section>
@@ -600,7 +601,7 @@
 						8 (800) <span class="contacts__extrabold">555-222-32</span>
 					</span>
 
-					<a href="#" class="contacts__main-btn">
+					<a href="#" class="contacts__main-btn popup-btn" data-form="popup-callback">
 						Обратный звонок
 					</a>
 				</div>
@@ -640,7 +641,7 @@
 						<span class="footer__number">
 							8 (800) <span class="font-600">555-33-54</span>
 						</span>
-						<a href="#" class="footer__btn">
+						<a href="#" class="footer__btn popup-btn" data-form='popup-callback'>
 							Обратный звонок
 						</a>
 					</div>
@@ -667,6 +668,252 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- POPUPS -->
+
+		<section class="popup__main popup" id="popup-callback">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						Заказать <br> обратный звонок
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="popup__main popup" id="popup-free-training">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						Запись на <br>бесплатную тренировку
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="popup__main popup" id="popup-free-training">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						Запись на <br>бесплатную тренировку
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="popup__main popup" id="popup-write">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						Записаться к <br> персональному тренеру
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="popup__main popup" id="popup-calc">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						рассчитать <br> стоимость абонимента
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
+		<section class="popup__main popup" id="popup-reviews">
+			<div class="popup__container">
+				<div class="popup__content">
+					<h3 class="popup__heading">
+						оставить <br>отзыв о фитнес-клубе
+					</h3>
+					<form class="popup__form" id='popup__form-main'>
+						<div class="popup__input-wr">
+							<input placeholder="Ваше имя:" name="name" type="text" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/user.svg">
+								<img src="img/user.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Телефон:" name="phone" type="tel" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/phone.svg">
+								<img src="img/phone.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<input placeholder="Почта:" name="name" type="email" class="popup__input">
+							<object class="popup__form-icons" type="image/svg+xml" data="img/email.svg">
+								<img src="img/email.png">
+							</object>
+						</div>
+						<div class="popup__input-wr">
+							<textarea placeholder="Ваш отзыв:" name="text" type="text" class="popup__input popup-text-field"></textarea>
+						</div>
+
+						<p class="popup__agreement">
+							Нажимая на кнопку “Отправить” 
+							я даю свое согласие на обработку
+							<a href="#" class="popup__agreement-link">персональных даных</a>
+						</p>
+						<button class="popup__btn">
+							Отправить
+						</button>	
+					</form>
+					<img class="popup__close" src="https://img.icons8.com/ios-filled/25/000000/delete-sign.png">
+				</div>
+			</div>
+		</section>
+
 	</body>
 	</html>
 
