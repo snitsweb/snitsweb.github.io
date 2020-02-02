@@ -363,7 +363,14 @@ body {
   padding: 18px 30px;
   font-size: 14px;
   font-weight: 800;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.header__action-bth:hover {
+  color: #fff;
+  background-color: #f7a600; }
 
 .content-wr {
   position: relative; }
@@ -435,7 +442,14 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 18px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.main__action-bth:hover {
+  color: #fff;
+  background-color: #f7a600; }
 
 .main__girl-img {
   position: absolute;
@@ -818,6 +832,10 @@ body {
   -o-transition: .3s;
   transition: .3s; }
 
+.trainers__btn:hover {
+  color: #fff;
+  background-color: #f7a600; }
+
 .trainers__write {
   display: inline-block;
   font-size: 14px;
@@ -825,7 +843,13 @@ body {
   color: #f7a600;
   text-decoration: none;
   border-bottom: 1px dashed #f7a600;
-  margin-top: 27px; }
+  margin-top: 27px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.trainers__write:hover {
+  color: #f7cd00; }
 
 .slick-list {
   margin: 0 auto; }
