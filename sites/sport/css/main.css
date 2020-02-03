@@ -755,7 +755,8 @@ body {
   font-family: Gilroy, sans-serif;
   font-weight: 800;
   max-width: 225px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  cursor: pointer; }
 
 .tour__agreement {
   max-width: 315px;
