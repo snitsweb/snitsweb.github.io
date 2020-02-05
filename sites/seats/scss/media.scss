@@ -1,0 +1,275 @@
+@import "libs.scss";
+
+@media screen and (max-width: 992px) {
+	.container{
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	//---------------------Advantages---------------
+
+	.adv__wr{
+		padding: 0 60px;
+	}
+
+	.adv__text{
+		width: 90%;
+	}
+
+	.adv__arrow{
+		transform: translateX(-54%);
+		top: -15px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.adv__box{
+		flex-direction: column;
+		padding-top: 0;
+		padding-bottom: 30px;
+		border-bottom: 1px solid $grey;
+	}
+
+	.adv__text-wr{
+		max-width: none;
+		text-align: center;
+	}
+
+	.adv__text{
+		width: 100%;
+	}
+
+	.adv__img{
+		margin: 30px auto 0 auto;
+		box-shadow: 0px 5px 20px rgba(88, 146, 166, 0.2);
+	}
+
+	.adv__arrow{
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	.main__wr{
+		align-items: stretch;
+	}
+	.main__heading{
+		width: 100%;
+		text-align: center;
+		font-size: 34px;
+    	line-height: 45px;
+	}
+	.main__text{
+		width: 100%;
+		text-align: center;
+		font-size: 24px;
+	}
+
+	.main__form-wr{
+		margin: 40px auto 0 auto;
+	}
+
+	//-----------Advatages-----------
+
+	.adv__heading {
+		font-size: 30px;
+		margin-bottom: 0;
+	}
+
+	.adv__box{
+		padding-top: 0;
+		margin-top: 0;
+	}
+
+	.adv__text{
+		font-size: 16px;
+    	line-height: 26px;
+	}
+
+	.adv__box-heading{
+		font-size: 24px;
+	}
+
+	.adv__img{
+		width: 60%;
+		display: block;
+	}
+
+	//----------------------Sale----------------
+
+	.sale__wr{
+		flex-direction: column;
+	}
+
+	.sale__price-wr{
+		margin-right: 0;
+	}
+
+	.sale__arrow{
+		display: none;
+	}
+
+	.sale__content{
+		margin-top: 40px;
+	}
+
+	//---------------Stats------------
+
+	.stats__item {
+		padding-top: 28px;
+	}
+
+	.stats__num {
+		font-size: 34px;
+	}
+
+	.stats__text {
+		font-size: 13px;
+		margin-top: 0;
+	}
+
+	//-------------Cert-----------------
+
+	.cert__heading{
+		font-size: 30px;
+	}
+
+	.cert__content{
+		flex-direction: column-reverse;
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.cert__box{
+		max-width: none;
+		width: 75%;
+	}
+
+	.cert__subtitle-wr{
+		flex-direction: column;
+	}
+
+	.cert__subtitle-wr i.fas{
+		margin-right: 0;
+		font-size: 30px;
+	}
+
+	.cert__subtitle{
+		margin-top: 10px;
+	}
+
+	.cert__paragraph{
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.cert__img{
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.main {
+		padding-top: 50px;
+	}
+
+	.header__num-wr {
+		font-size: 18px;
+	}
+
+	.header__callback {
+		font-size: 13px;
+		margin-top: 10px;
+	}
+
+	.main__heading {
+		font-size: 21px;
+		line-height: 30px;
+	}
+
+	.main__text{
+		font-size: 16px;
+	}
+
+	//------------Advantages-------------
+
+	.advantages {
+		padding-bottom: 60px;
+	}
+
+	.adv__wr{
+		padding: 0;
+	}
+
+	.adv__heading{
+		font-size: 21px;
+	}
+
+	.adv__box:last-child{
+		border-bottom: none;
+	}
+
+	.adv__box-heading{
+		font-size: 18px;
+		margin-top: 20px;
+    	line-height: 30px;
+
+	}
+
+	.adv__text{
+		margin-top: 10px;
+	}
+
+	//------------Sale----------
+	
+	.sale {
+		padding-top: 50px;
+	}
+
+	.sale__heading{
+		font-size: 40px;
+	}
+
+	.sale__heading-small{
+		font-size: 21px;
+	}
+
+	.sale__present {
+		font-size: 21px;
+		line-height: normal;
+	}
+
+	//----------------Stats------------
+	.stats{
+		padding: 30px 0 50px 0;
+	}
+	.stats__wr{
+		flex-direction: column;
+	}
+
+	.stats__item{
+		margin-top: 30px;
+	}
+
+	.stats__text {
+	    font-size: 14px;
+	    margin-top: 40px;
+	}
+
+	//-----------------Cert-------------
+	
+	.cert__box{
+		width: 100%;
+		max-width: 90vw;
+	}
+
+	.cert__heading{
+		font-size: 21px;
+	}
+
+	.cert__subtitle{
+		font-size: 18px;
+	}
+
+}
