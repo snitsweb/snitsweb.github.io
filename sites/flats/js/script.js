@@ -7,7 +7,7 @@ $( document ).ready(function() {
 	    'menu': document.getElementById('menu'),
 	    'padding': 256,
 	    'tolerance': 70,
-	    'side' : 'right'
+	    'side' : 'right',
 	  });
 
 	 $('.main__mmu-btn').click(function(){
@@ -16,11 +16,11 @@ $( document ).ready(function() {
 	    
 
    	slideout.on('beforeopen', function() {
-   		$('.main__mmu-btn').toggleClass('is-active');
+   		$('.main__mmu-btn').addClass('is-active');
    	});
 
     slideout.on('beforeclose', function() {
-   		$('.main__mmu-btn').toggleClass('is-active');
+   		$('.main__mmu-btn').removeClass('is-active');
    	});
 
    	//----------Sidebar MMU end --------
