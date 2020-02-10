@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+button{
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
