@@ -1,6 +1,6 @@
 $( document ).ready(function() {
-  $('.change_items').click(function(e){
-    $(this).toggleClass('active');
+  $('.change_items .top').click(function(e){
+    $('.change_items').toggleClass('active');
   });
 
   $('.change_items > .bot > .type_color > input').click(function(e){

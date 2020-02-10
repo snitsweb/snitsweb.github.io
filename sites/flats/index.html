@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="css/hamburger.min.css">
 <link rel="stylesheet" type="text/css" href="libs/twentytwenty/twentytwenty.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
 <link rel="stylesheet" href="css/main.css">
@@ -30,6 +31,53 @@
 
 </head>
 <body>
+	<header class="main__header">
+		<div class="mobile__mmu">
+			<div class="mmu__wr">
+				<ul class="mmu">
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#adv">преимущества</a></li>
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#gallery">фотографии</a></li>
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#reviews">отзывы</a></li>
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#steps">этапы ремонта</a></li>
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#cost">расчет стоимости</a></li>
+					<li class="mmu-item"><a href="#" class="link-scroll mmu-link link-scroll" data-link-id="#contact">контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="main__header-wr">
+				<div class="main__logo-wr">
+					<object class='main__logo' type="image/svg+xml" data="img/logo.svg"> </object>
+					<p class="main__logo-text">
+						Сопровождение и консультации по ремонту
+					</p>
+				</div>
+				<nav class="main__nav-wr">
+					<ul class="main__nav">
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#adv">преимущества</a></li>
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#gallery">фотографии</a></li>
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#reviews">отзывы</a></li>
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#steps">этапы ремонта</a></li>
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#cost">расчет стоимости</a></li>
+						<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#contact">контакты</a></li>
+					</ul>
+					<a href="#" class="main__header-phone change_collor">
+						+7 (985) 424 99 
+					</a>
+
+					<object class='main__logo-mobile' type="image/svg+xml" data="img/logo.svg"> </object>
+
+					<div class="hamburger hamburger--squeeze main__mmu-btn">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
 	<section class="main" id="main">
 		<div class="main__text-right">
 			<div class="main__arrow-wr">
@@ -40,32 +88,6 @@
 		</div>
 		<div class="main__wr">
 			<div class="container">
-				<header class="main__header-wr">
-					<div class="main__logo-wr">
-						<object class='main__logo' type="image/svg+xml" data="img/logo.svg"> </object>
-						<p class="main__logo-text">
-							Сопровождение и консультации по ремонту
-						</p>
-					</div>
-					<nav class="main__nav-wr">
-						<ul class="main__nav">
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#adv">преимущества</a></li>
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#gallery">фотографии</a></li>
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#reviews">отзывы</a></li>
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#steps">этапы ремонта</a></li>
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#cost">расчет стоимости</a></li>
-							<li class="main__nav-item"><a href="#" class="main__nav-link link-scroll" data-link-id="#contact">контакты</a></li>
-						</ul>
-						<a href="#" class="main__header-phone change_collor">
-							+7 (985) 424 99 
-						</a>
-						<div class="hamburger hamburger--squeeze main__mmu-btn">
-							<div class="hamburger-box">
-								<div class="hamburger-inner"></div>
-							</div>
-						</div>
-					</nav>
-				</header>
 				<div class="main__content">
 					<h1 class="main__heading">Качественный ремонт<br> квартиры под ключ в Ваших руках</h1>
 					<p class="main__desc">
@@ -128,16 +150,6 @@
 			<div class="main__window"></div>
 		</div>
 	</section>
-	<section class="mmu_right" id="menu">
-		<ul class="mmu-list">
-			<li class="mmu-item"><a href="#" class="mmu-link change_color_hover link-scroll" data-link-id="#adv">преимущества</a></li>
-			<li class="mmu-item"><a href="#" class="mmu-link change_color_hover link-scroll" data-link-id="#gallery">фотографии</a></li>
-			<li class="mmu-item"><a href="#" class="mmu-link change_color_hover link-scroll" data-link-id="#reviews">отзывы</a></li>
-			<li class="mmu-item"><a href="#" class="mmu-link change_color_hover link-scroll" data-link-id="#steps">этапы ремонта</a></li>
-			<li class="mmu-item"><a href="#" class="mmu-link change_color_hover link-scroll" data-link-id="#contact">контакты</a></li>
-		</ul>		
-	</section>
-
 	<section class="adv" id="adv">
 		<div class="container">
 			<div class="adv__wr">
@@ -199,39 +211,39 @@
 				<div class="gallery__box">
 					<div class="gallery__row">
 						<div class="gallery__column">
-							<img src="img/gallery/1-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/1-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/1-1.jpg" data-fancybox="gallery"><img src="img/gallery/1-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/1-2.jpg" data-fancybox="gallery"><img src="img/gallery/1-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/2-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/2-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/2-1.jpg" data-fancybox="gallery"><img src="img/gallery/2-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/2-2.jpg" data-fancybox="gallery"><img src="img/gallery/2-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/3-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/3-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/3-1.jpg" data-fancybox="gallery"><img src="img/gallery/3-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/3-2.jpg" data-fancybox="gallery"><img src="img/gallery/3-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/4-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/4-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/4-1.jpg" data-fancybox="gallery"><img src="img/gallery/4-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/4-2.jpg" data-fancybox="gallery"><img src="img/gallery/4-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 					</div>
 
 					<div class="gallery__row">
 						<div class="gallery__column">
-							<img src="img/gallery/1-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/1-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/1-1.jpg" data-fancybox="gallery"><img src="img/gallery/1-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/1-2.jpg" data-fancybox="gallery"><img src="img/gallery/1-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/2-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/2-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/2-1.jpg" data-fancybox="gallery"><img src="img/gallery/2-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/2-2.jpg" data-fancybox="gallery"><img src="img/gallery/2-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/3-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/3-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/3-1.jpg" data-fancybox="gallery"><img src="img/gallery/3-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/3-2.jpg" data-fancybox="gallery"><img src="img/gallery/3-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 						<div class="gallery__column">
-							<img src="img/gallery/4-1.jpg" alt="Img" class="gallery__item change_border_radius">
-							<img src="img/gallery/4-2.jpg" alt="Img" class="gallery__item change_border_radius">
+							<a href="img/gallery/4-1.jpg" data-fancybox="gallery"><img src="img/gallery/4-1.jpg" alt="Img" class="gallery__item change_border_radius"></a>
+							<a href="img/gallery/4-2.jpg" data-fancybox="gallery"><img src="img/gallery/4-2.jpg" alt="Img" class="gallery__item change_border_radius"></a>
 						</div>
 					</div>
 				</div>
@@ -379,58 +391,149 @@
 				<div class="cost__box">
 					<img src="img/cost/man.png" class="cost__main-img">
 					<div class="cost__form-wr change_border_radius">
-						<p class="cost__steps-wr">
-							<span class="step__counter-now">Шаг <span id="step-now"> 1 </span></span>
-							из <span id="steps-all"> 1 </span>
-						</p>
 
-						<p class="cost__form-quest">
-							В каком состоянии ваша квартира
-						</p>
-
-						<form action="#" class="cost__form">
-							<div class="cost__form-row">
-								<input name="status" id="form__check-1" type="radio" class="cost__form-check" checked>
-								<label for="form__check-1">
-									<p class="form__check-title">
-										Без отделки
-									</p>
-									<p class="form__check-desc">
-										Нет штукатурки стен и стяжки пола
-									</p>
-								</label>
+						<div class="cost-form-step">
+							<p class="cost__steps-wr">
+								<span class="step__counter-now">Шаг <span class="step-now"> 1 </span></span>
+								из <span class="steps-all"> 1 </span>
+							</p>
+							
+							<p class="cost__form-quest">
+								В каком состоянии ваша квартира
+							</p>
+							
+							<form class="cost__form">
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-1" type="radio" class="cost__form-check" checked>
+									<label for="form__check-1">
+										<p class="form__check-title">
+											Без отделки
+										</p>
+										<p class="form__check-desc">
+											Нет штукатурки стен и стяжки пола
+										</p>
+									</label>
+								</div>
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-2" type="radio" class="cost__form-check">
+									<label for="form__check-2">
+										<p class="form__check-title">
+											Предчистовая отделка
+										</p>
+										<p class="form__check-desc">
+											Стены оштукатурены, сделана стяжка пола
+										</p>
+									</label>
+								</div>
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-3" type="radio" class="cost__form-check">
+									<label for="form__check-3">
+										<p class="form__check-title">
+											Старая отделка
+										</p>
+										<p class="form__check-desc">
+											Есть ремонт, который нужно переделать
+										</p>
+									</label>
+								</div>
+							</form>
+							<div class="cost__form-btn-wr">
+								<a href="#" class="cost__form-btn-back cost__form-btn change_border_radius">
+									Назад
+								</a>
+								<a href="#" class="cost__form-btn-next cost__form-btn change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius">
+									Далее
+								</a>
 							</div>
-							<div class="cost__form-row">
-								<input name="status" id="form__check-2" type="radio" class="cost__form-check">
-								<label for="form__check-2">
-									<p class="form__check-title">
-										Предчистовая отделка
-									</p>
-									<p class="form__check-desc">
-										Стены оштукатурены, сделана стяжка пола
-									</p>
-								</label>
-							</div>
-							<div class="cost__form-row">
-								<input name="status" id="form__check-3" type="radio" class="cost__form-check">
-								<label for="form__check-3">
-									<p class="form__check-title">
-										Старая отделка
-									</p>
-									<p class="form__check-desc">
-										Есть ремонт, который нужно переделать
-									</p>
-								</label>
-							</div>
-						</form>
-						<div class="cost__form-btn-wr">
-							<a href="#" class="cost__form-btn-back cost__form-btn change_border_radius">
-								Назад
-							</a>
-							<a href="#" class="cost__form-btn-next cost__form-btn change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius">
-								Далее
-							</a>
 						</div>
+
+						<div class="cost-form-step">
+							<p class="cost__steps-wr">
+								<span class="step__counter-now">Шаг <span class="step-now"> 1 </span></span>
+								из <span class="steps-all"> 1 </span>
+							</p>
+							
+							<p class="cost__form-quest">
+								В каком состоянии ваша квартира
+							</p>
+							
+							<form class="cost__form">
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-1" type="radio" class="cost__form-check" checked>
+									<label for="form__check-1">
+										<p class="form__check-title">
+											Без отделки
+										</p>
+										<p class="form__check-desc">
+											Нет штукатурки стен и стяжки пола
+										</p>
+									</label>
+								</div>
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-2" type="radio" class="cost__form-check">
+									<label for="form__check-2">
+										<p class="form__check-title">
+											Предчистовая отделка
+										</p>
+										<p class="form__check-desc">
+											Стены оштукатурены, сделана стяжка пола
+										</p>
+									</label>
+								</div>
+								<div class="cost__form-row">
+									<input required name="status" id="form__check-3" type="radio" class="cost__form-check">
+									<label for="form__check-3">
+										<p class="form__check-title">
+											Старая отделка
+										</p>
+										<p class="form__check-desc">
+											Есть ремонт, который нужно переделать
+										</p>
+									</label>
+								</div>
+							</form>
+							<div class="cost__form-btn-wr">
+								<a href="#" class="cost__form-btn-back cost__form-btn change_border_radius">
+									Назад
+								</a>
+								<a href="#" class="cost__form-btn-next cost__form-btn change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius">
+									Далее
+								</a>
+							</div>
+						</div>
+
+						<div class="cost-form-step">
+							<p class="cost__steps-wr">
+								<span class="step__counter-now">Шаг <span class="step-now"> 1 </span></span>
+								из <span class="steps-all"> 1 </span>
+							</p>
+							
+							<p class="cost__form-quest">
+								В каком состоянии ваша квартира
+							</p>
+							
+							<form id="cost-form-last" class="popup__cost-form popup__form">
+								<input name="name" required type="text" class="popup__cost-fild popup__fild change_border_radius" placeholder="Ваше имя:">
+								<input name="mail" required type="email" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Почта:">
+								<input required type="tel" name="phone" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Телефон:">
+								<div class="popup__agreement-wr">
+									<input name="agreement" required id="popup__agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
+									<label class="fas fa-check popup__agreement-icon" for="popup__agree-input"></label>
+									<label for="popup__agree-input" class="popup__agree-label">
+										Я даю свое согласие на обработку <br><a href="#" class="popup__rules">персональных даных</a>
+									</label>
+								</div>
+							</form>
+							<div class="cost__form-btn-wr">
+								<a href="#" class="cost__form-btn-back cost__form-btn change_border_radius">
+									Назад
+								</a>
+								<button type="submit" form="cost-form-last" class="cost-form-last-btn cost__form-btn change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius">
+									Далее
+								</button>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -447,14 +550,17 @@
 					убедитесь в качестве !
 				</p>
 				<div class="excursion__form-wr">
-					<form id="excursion-form" action="#" class="excursion__form">
-						<input class="excursion__input change_border_radius" type="text" name="name" placeholder="Ваше имя:">
-						<input class="excursion__input change_border_radius" type="tel" name="phone" placeholder="Телефон:">
-						<input class="excursion__input change_border_radius" type="number"  name="number" placeholder="Кол-во гостей:">
+					<form id="excursion-form" class="excursion__form">
+						<input required class="excursion__input change_border_radius" type="text" name="name" placeholder="Ваше имя:">
+						<input required class="excursion__input change_border_radius" type="tel" name="phone" placeholder="Телефон:">
+						<input required class="excursion__input change_border_radius" type="number"  name="number" placeholder="Кол-во гостей:">
+
+						
 					</form>
-					<button class="excursion__btn btn-popup change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius" data-popup="popup__excursion" form="excursion-form" type="submit">
+					<button type="submit" id="excursion-btn" form="excursion-form" class="excursion__btn change_border_radius change_bg change_shadow change_border change_color_hover change_svg_hover change_border_radius">
 						Оставить заявку
 					</button>
+					
 				</div>
 			</div>
 		</div>
@@ -546,11 +652,11 @@
 				Получить <br>расчет стоимости
 			</p>
 			<form class="popup__cost-form popup__form">
-				<input type="text" class="popup__cost-fild popup__fild change_border_radius" placeholder="Ваше имя:">
-				<input type="email" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Почта:">
-				<input type="tel" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Телефон:">
+				<input name="name" required type="text" class="popup__cost-fild popup__fild change_border_radius" placeholder="Ваше имя:">
+				<input name="mail" required type="email" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Почта:">
+				<input required type="tel" name="phone" class="popup__cost-fild popup__fild change_border_radius"  placeholder="Телефон:">
 				<div class="popup__agreement-wr">
-					<input id="popup__agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
+					<input name="agreement" required id="popup__agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
 					<label class="fas fa-check popup__agreement-icon" for="popup__agree-input"></label>
 					<label for="popup__agree-input" class="popup__agree-label">
 						Я даю свое согласие на обработку <br><a href="#" class="popup__rules">персональных даных</a>
@@ -570,11 +676,11 @@
 				Остались вопросы? <br>Задайте их и мы ответим
 			</p>
 			<form class="popup__quest-form popup__form">
-				<input type="text" class="popup__quest-fild popup__fild change_border_radius" placeholder="Ваше имя:">
-				<input type="email" class="popup__quest-fild popup__fild change_border_radius"  placeholder="Почта:">
-				<textarea name="question" class="popup__quest-fild popup__fild change_border_radius" placeholder="Текст отзыва:"></textarea>
+				<input name="name" required type="text" class="popup__quest-fild popup__fild change_border_radius" placeholder="Ваше имя:">
+				<input name="mail" required type="email" class="popup__quest-fild popup__fild change_border_radius"  placeholder="Почта:">
+				<textarea name="message" required name="question" class="popup__quest-fild popup__fild change_border_radius" placeholder="Текст отзыва:"></textarea>
 				<div class="popup__agreement-wr">
-					<input id="popup__quest-agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
+					<input name="agreement" required id="popup__quest-agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
 					<label class="fas fa-check popup__agreement-icon" for="popup__quest-agree-input"></label>
 					<label for="popup__quest-agree-input" class="popup__agree-label">
 						Я даю свое согласие на обработку <br><a href="#" class="popup__rules">персональных даных</a>
@@ -595,16 +701,16 @@
 				Оставить <br>отзыв о ремонте
 			</p>
 			<form class="popup__review-form popup__form">
-				<input type="text" class="popup__review-fild popup__fild change_border_radius" placeholder="Ваше имя:">
-				<input type="email" class="popup__review-fild popup__fild change_border_radius"  placeholder="Почта:">
-				<textarea name="question" class="popup__review-fild popup__fild change_border_radius" placeholder="Текст отзыва:"></textarea>
-				<input id="popup__review-file" type="file" class="popup__review-file popup__fild change_border_radius">
+				<input name="name" required type="text" class="popup__review-fild popup__fild change_border_radius" placeholder="Ваше имя:">
+				<input name="mail" required type="email" class="popup__review-fild popup__fild change_border_radius"  placeholder="Почта:">
+				<textarea required name="question" class="popup__review-fild popup__fild change_border_radius" placeholder="Текст отзыва:"></textarea>
+				<input name="file" id="popup__review-file" type="file" class="popup__review-file popup__fild change_border_radius">
 				<label for="popup__review-file" class="popup__review-file-label popup__fild change_border_radius">
 					<i class="fas fa-camera popup__review-camera-icon"></i>
 					<span>Прикрепить фото<span>
 					</label>
 					<div class="popup__agreement-wr">
-						<input id="popup__review-agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
+						<input name="agreement" required id="popup__review-agree-input" type="checkbox" checked class="popup__agreement change_border_radius">
 						<label class="fas fa-check popup__agreement-icon" for="popup__review-agree-input"></label>
 						<label for="popup__review-agree-input" class="popup__agree-label">
 							Я даю свое согласие на обработку <br><a href="#" class="popup__rules">персональных даных</a>
@@ -655,13 +761,16 @@
 		</div>
 
 
+
+
 		<script src="https://kit.fontawesome.com/da280532b2.js" crossorigin="anonymous"></script>
 		<script src="libs/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 		<script type="text/javascript" src="libs/twentytwenty/jquery.event.move.js"></script>
 		<script type="text/javascript" src="libs/twentytwenty/jquery.twentytwenty.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+		<script src="libs/jquery.maskedinput.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/popups.js"></script>
 		<script src="js/settings.js"></script>
