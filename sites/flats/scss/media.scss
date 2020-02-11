@@ -26,15 +26,15 @@
 		display: none;
 	}
 
-	.main__adv{
+	.main__preim{
 		max-width: 95vw;
 	}
 
 	.main__nav-wr{
 		display: flex;
-    	align-items: center;
-    	justify-content: flex-end;
-   		width: 100%;
+		align-items: center;
+		justify-content: flex-end;
+		width: 100%;
 	}
 }
 
@@ -51,12 +51,45 @@
 	.cost__form-wr{
 		margin-top: 40px;
 	}
+
+	//--------------Owl-----------
+
+	.reviews__slider-wr{
+		width: 100%;
+	}
+
+	.reviews__slide-right{
+		max-width: 400px;
+		margin-top: 40px;
+	}
+
+	.reviews__slide-item {
+		flex-direction: column;
+    	align-items: center;
+	}
+
+	.owl-prev{
+		left: 0;
+	}
+	.owl-next{
+		right: 0;
+	}
+
+	.reviews__slide-left{
+		height: 192.6px;
+		width: 400px;
+	}
+
+	.twentytwenty-wrapper{
+		width: 400px;
+		margin-right: 0;
+	}
 }
 
 @media screen and (max-width: 1000px) {
-	.adv__item-1,
-	.adv__item-2,
-	.adv__item-3{
+	.preim__item-1,
+	.preim__item-2,
+	.preim__item-3{
 		max-width: 30%;
 	}
 
@@ -83,6 +116,11 @@
 	.footer__vektus-wr{
 		margin-top: 35px;
 	}
+
+	.cost__heading{
+		text-align: center;
+	}
+	
 }
 
 @media screen and (max-width: 870px) {
@@ -113,7 +151,7 @@
 		color: #010101;
 	}
 	.main__logo-text-active:before {
-	    background-color: #010101;
+		background-color: #010101;
 	}
 
 	.hamburger.is-active.active-mmu .hamburger-inner, 
@@ -134,31 +172,31 @@
 		top: -1px;
 	}
 
-	.main__adv{
+	.main__preim{
 		flex-wrap: wrap;
 	}
 
-	.main__adv{
+	.main__preim{
 		max-width: calc(100% - 40px);
 		bottom: -367px;
 	}
 
-	.main__adv-item {
+	.main__preim-item {
 		width: 50%;
 	}
 
-	.main__adv-item:nth-child(even){
+	.main__preim-item:nth-child(even){
 		width: 50%;
 		background-color: transparent;
 	}
 
-	//-------------------Adv-----------------
+	//-------------------preim-----------------
 
-	.adv {
+	.preim {
 		padding-top: 550px;
 	}
 
-	.adv__box{
+	.preim__box{
 		align-items: flex-start;
 	}
 
@@ -169,9 +207,6 @@
 		max-width: none;
 	}
 
-	.slick-arrow{
-		display: none;
-	}
 
 	//-----------------Steps---------
 
@@ -249,7 +284,7 @@
 	}
 
 	.hamburger-inner:after {
-	    bottom: -7px;
+		bottom: -7px;
 	}
 
 	header.fix{
@@ -313,65 +348,65 @@
 		width: 100%;
 	}
 
-	.main__adv{
+	.main__preim{
 		max-width: calc(100% - 40px);
 		bottom: -73%;
 	}
 
-	.main__adv-item {
+	.main__preim-item {
 		width: 100%;
 		padding: 30px 50px 0 50px;
 	}
 
-	.main__adv-item:first-child{
+	.main__preim-item:first-child{
 		padding-top: 45px;
 	}
 
-	.main__adv-item:last-child{
+	.main__preim-item:last-child{
 		padding-bottom: 60px;
 	}
 
-	.main__adv-item:nth-child(even){
+	.main__preim-item:nth-child(even){
 		width: 100%;
 	}
 
-	//-----------Adv-----------
+	//-----------preim-----------
 
-	.adv {
+	.preim {
 		padding-top: 765px;
 		padding-bottom: 55px;
 	}
 
-	.adv__heading{
+	.preim__heading{
 		font-size: 22px;
 	}
 
-	.adv__desc{
+	.preim__desc{
 		font-size: 14px;
 		line-height: 28px;
 	}
 
-	.adv__box{
+	.preim__box{
 		flex-direction: column;
 		margin-top: 100px;
 	}
 
-	.adv__item-1, .adv__item-2, .adv__item-3{
+	.preim__item-1, .preim__item-2, .preim__item-3{
 		max-width: none;
 		width: 100%;
 	}
 
-	.adv__item-1 .adv__item-desc, .adv__item-3 .adv__item-desc{
+	.preim__item-1 .preim__item-desc, .preim__item-3 .preim__item-desc{
 		max-width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.adv__item:first-child{
+	.preim__item:first-child{
 		margin-top: 0;
 	}
 
-	.adv__item{
+	.preim__item{
 		margin-top: 75px;
 	}
 
@@ -446,10 +481,6 @@
 		margin-top: 40px;
 	}
 
-	.slick-arrow{
-		display: none!important;
-	}
-
 	.reviews__slide-heading{
 		font-size: 15px;
 	}
@@ -459,7 +490,7 @@
 	}
 
 	.reviews__main-btn{
-		margin-top: 55px;
+		margin-top: 40px;
 	}
 
 	//------------------Steps-------------------
@@ -478,9 +509,9 @@
 	}
 
 	.steps__heading:before {
-	    width: 52px;
-	    height: 150px;
-	    top: -50px;
+		width: 52px;
+		height: 150px;
+		top: -50px;
 	}
 
 	.steps__box{
@@ -521,9 +552,55 @@
 		left: 8px;
 	}
 
+	//---------------------COst--------
+
 	.cost{
-		display: none;
+		max-height: none;
+		padding-bottom: 40px;
+		padding-top: 40px;
 	}
+	
+	.cost__wr{
+		margin-bottom: 0;
+		align-items: flex-start;
+	}
+
+	.cost__heading{
+		font-size: 22px;
+		line-height: 1.5;
+		text-align: left;
+		margin-left: 20px;
+	}
+
+
+	.cost__form-wr{
+		width: 100%;
+		padding: 40px 30px 40px 30px;
+	}
+
+	.cost__form-row{
+		max-width: 100%;
+	}
+
+	.cost__form {
+	    margin-top: 35px;
+	}
+
+	.cost__form-btn-wr{
+		flex-direction: column;
+		align-items: center;
+		font-size: 18px;
+	}
+
+	.cost__form-btn-next,
+	.cost-form-last-btn{
+		margin-top: 10px;
+	}
+
+	.cost__steps-wr{
+		font-size: 15px;
+	}
+
 
 
 	//----------------------Excursion--------------------
@@ -600,11 +677,32 @@
 	//-----------Footer---------
 
 	.footer__logo{
-		width: 134px;
+		width: 120px;
 	}
 
 	.footer__vektus-wr{
 		justify-content: center;
+	}
+
+	.footer__logo-text{
+		margin-left: 0;
+		max-width: 105px;
+	}
+
+	.menu-active + .container .main__header-phone{
+		display: none;
+	}
+
+	.menu-active + .container .main__nav-wr{
+		justify-content: flex-end;
+	}
+
+	.main__header.fix .container .main__nav-wr{
+		justify-content: space-between;
+	}
+
+	.hamburger-box{
+		width: 24px;
 	}
 }
 

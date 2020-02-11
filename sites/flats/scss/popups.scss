@@ -5,13 +5,13 @@
 	height: 100vh;
 	top:0;
 	left: 0;
-	z-index: 99;
+	z-index: 101;
 	background-color: rgba(0,0,0,.5);
 	cursor: pointer;
 }
 
 .popup__wr{
-	width: 350px;
+	width: 500px;
 	margin: auto;
 	position: absolute;
 	top: 50%;
@@ -40,10 +40,10 @@
 	font-family: 'Gilroy', sans-serif;
 	border-radius: 30px;
 	background-color: #f4f4f4;
-	color: #c4bfbf;
+	color: #000;
 	width: 100%;
 	border: none;
-	padding: 24px 33px;
+	padding: 21.6px 33px;
 	font-weight: 800;
 	margin-bottom: 20px;
 }
@@ -284,4 +284,18 @@
   width: 25px;
   height: 25px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+	.popup__wr{
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.popup__wr{
+		max-height: none;
+		width: 100vw;
+		height: 100vh;
+	}
 }
