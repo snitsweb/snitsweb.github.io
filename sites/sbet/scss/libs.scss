@@ -1,0 +1,26 @@
+$yellow: #FDE404;
+$black: #2B2B2B;
+$btn_hover: #FBB200;
+$btn_tr_hover: #AAAAAA;
+
+
+*{
+	box-sizing: border-box;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center{
+	text-align: center;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+}

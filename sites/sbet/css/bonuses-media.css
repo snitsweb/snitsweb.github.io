@@ -1,0 +1,84 @@
+@media screen and (max-width: 1200px) {
+  .bonuses__box-item:nth-child(3n) {
+    margin-right: 0; }
+  .bonuses__box-item:nth-child(4n) {
+    margin-right: 20px; } }
+
+@media screen and (max-width: 910px) {
+  .bonuses__box {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .bonuses__box-item:nth-child(4n) {
+    margin-right: 0; }
+  .bonuses__box-item:nth-child(2) {
+    margin-right: 0; }
+  .bonuses__box-item:nth-child(2n+1) {
+    margin-right: 20px; } }
+
+@media screen and (max-width: 700px) {
+  .bonuses__nav-items-wr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .bonuses__nav-box {
+    width: 100%; }
+  .bonuses__nav-box:first-child {
+    margin-top: 0; }
+  .bonuses__nav-box {
+    margin-top: 30px; } }
+
+@media screen and (max-width: 615px) {
+  .bonuses__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+  .bonuses__box-item:nth-child(2n+1) {
+    margin-right: 0; } }
+
+@media screen and (max-width: 600px) {
+  .bonuses__heading {
+    font-weight: bold;
+    font-size: 14px; }
+  .bonuses__nav-helper-wr {
+    display: none; }
+  .bonuses__nav-wr {
+    padding: 20px 15px 0 15px; }
+  .bonuses__nav-heading-wr {
+    padding-bottom: 15px; }
+  .bonuses__nav-heading {
+    font-size: 12px;
+    font-weight: 700; }
+  .bonuses__nav-heading-ico {
+    height: 6px;
+    width: 11px; }
+  .bonuses__nav-content {
+    padding-top: 20px; }
+  .bonuses__nav-list {
+    padding-left: 25px; }
+  .bonuses__nav-link:before {
+    left: -25px; }
+  .bonuses__nav-link {
+    font-size: 12px;
+    font-weight: 400; }
+  .bonuses__box-item {
+    width: 270px; }
+  .bonuses__box-wr {
+    padding-top: 30px; }
+  .bonuses__box-title {
+    font-size: 12px; } }
+
+@media screen and (max-width: 400px) {
+  .bonuses__box-item:nth-child(n) {
+    margin-right: 0; }
+  .bonuses__box-item,
+  .bonuses__box-img-wr {
+    width: 100%;
+    background-color: transparent; } }
