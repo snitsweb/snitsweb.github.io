@@ -56,8 +56,8 @@ jobs:
         run: |
           kubectl patch deployment ui-portfolio \
             -n apps-prod \
-            -p '{"spec":{"template":{"spec":{"container":{"name":"ui-portfolio","image":"${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-${{ steps.vars.outputs.COMMIT_HASH }}"}}}}}'
+            -p '{"spec":{"template":{"spec":{"containers":[{"name":"portfolio","image":"${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-${{ steps.vars.outputs.COMMIT_HASH }}"}]}}}}'
 
       - name: Verify deployment
         run: |
-          kubectl rollout status deployment/ui-portfolio --timeout=300s
+          kubectl rollout status deployment/ui-portfolio --timeout=300s -n apps-prod
