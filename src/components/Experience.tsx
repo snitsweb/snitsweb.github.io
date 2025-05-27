@@ -34,18 +34,18 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Experience</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Experience</h2>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
-            <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors">
-              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center text-xl flex-shrink-0">
+            <div key={index} className="flex items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+              <div className="w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center text-xl flex-shrink-0">
                 {exp.icon}
               </div>
               <div className="flex-1">
-                <h3 className="font-semibold text-gray-900 mb-1">{exp.title}</h3>
-                <p className="text-gray-600 text-sm">
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-1">{exp.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">
                   {exp.period} • {exp.location}
                 </p>
               </div>

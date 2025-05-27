@@ -21,12 +21,12 @@ const projects = [
 
 const FeaturedProjects = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Projects</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Featured Projects</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 dark:bg-gray-700 dark:border-gray-600">
               <div className="aspect-video overflow-hidden rounded-t-lg">
                 <img
                   src={project.image}
@@ -35,8 +35,8 @@ const FeaturedProjects = () => {
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.description}</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">{project.description}</p>
               </CardContent>
             </Card>
           ))}
