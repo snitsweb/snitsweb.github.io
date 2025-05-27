@@ -1,4 +1,3 @@
-
 import {
   Accordion,
   AccordionContent,
@@ -8,39 +7,39 @@ import {
 
 const experiences = [
   {
-    title: "Lead Software Engineer at Figma",
-    period: "2020-Now",
-    location: "San Francisco, CA",
-    icon: "💼",
-    details: "Leading a team of 8 engineers working on core product features. Responsible for architectural decisions, code reviews, and mentoring junior developers. Implemented new collaboration features that increased user engagement by 40%. Technologies: React, TypeScript, Node.js, PostgreSQL."
+    title: "Lead Full Stack & DevOps Engineer at WeMean",
+    period: "2024.10 – now",
+    location: "JavaScript/TypeScript Stack",
+    icon: "🚀",
+    details: "Assessed risks and estimated work hours for new features, providing management with a clear understanding of potential issues and possible solutions. Managed infrastructure and proactively informed management about potential problems such as rising maintenance costs, while proposing alternative solutions. Reviewed the codebase to improve code quality and reduce the risk of unwanted errors."
   },
   {
-    title: "Software Engineer at Figma",
-    period: "2019-2020",
-    location: "San Francisco, CA",
+    title: "JavaScript/TypeScript Software Engineer at WeMean",
+    period: "2023.04 – 2024.10",
+    location: "JavaScript/TypeScript Stack",
     icon: "⚙️",
-    details: "Developed and maintained key features for the design collaboration platform. Built real-time commenting system and improved performance of the vector editing engine. Collaborated with designers and product managers to deliver user-focused solutions. Technologies: JavaScript, React, WebGL, Redis."
+    details: "Migrated microservices from TCP to gRPC, improving code readability and enabling strict type checking. Led the development team, ensuring high code quality and fast feature delivery. Focused on architectural improvements and team leadership."
   },
   {
-    title: "DevOps Engineer at Figma",
-    period: "2018-2019",
-    location: "San Francisco, CA",
-    icon: "🔧",
-    details: "Managed cloud infrastructure and deployment pipelines. Implemented CI/CD processes that reduced deployment time by 60%. Set up monitoring and alerting systems for production environments. Worked with Docker, Kubernetes, and AWS services to ensure high availability."
-  },
-  {
-    title: "Software Engineer at Dropbox",
-    period: "2017-2018",
-    location: "San Francisco, CA",
+    title: "Front-end Developer at Obmify",
+    period: "2023.05 – 2023.07",
+    location: "Remote",
     icon: "💻",
-    details: "Worked on file synchronization and sharing features. Optimized file upload algorithms that improved sync speed by 35%. Collaborated with cross-functional teams to deliver mobile and web applications. Technologies: Python, Go, React, MySQL."
+    details: "Developed a partner dashboard from scratch, improving transparency for project partners. Focused on creating intuitive user interfaces and enhancing partner experience through modern frontend technologies."
   },
   {
-    title: "Software Engineering Intern at Facebook",
-    period: "2016",
-    location: "Menlo Park, CA",
-    icon: "🎓",
-    details: "Developed internal tools for the engineering team during a 3-month internship. Built a dashboard for tracking code review metrics and team productivity. Gained experience with large-scale systems and learned best practices for software development in a fast-paced environment."
+    title: "Full Stack Developer at RekinySukcesu",
+    period: "2022.03 – 2025.01",
+    location: "JavaScript/TypeScript",
+    icon: "🔧",
+    details: "Developed and maintained over five projects using a custom CMS built by our team. Contributed to server management services, which ensured greater transparency for developers, reduced the number of unpredictable situations, and improved code quality. Actively participated in internal company processes: introduced mandatory code reviews, established Git workflow standards, and contributed ideas during brainstorming sessions to enhance operational efficiency. Migrated a VPS with an unsupported OS version to a newer one, ensuring the highest level of security."
+  },
+  {
+    title: "Full Stack Developer at AzurAgro",
+    period: "2020.03 – 2022.02",
+    location: "WordPress & Custom Development",
+    icon: "🌱",
+    details: "Designed and developed an informational website based on WordPress that outperformed competitors' sites in UX/UI. Provided smooth support and continuous feature delivery to the client. Focused on creating superior user experience and maintaining high-quality code standards."
   }
 ];
 
