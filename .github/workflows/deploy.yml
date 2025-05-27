@@ -55,6 +55,7 @@ jobs:
       - name: Update Kubernetes deployment
         run: |
           kubectl patch deployment ui-portfolio \
+            -n apps-prod \
             -p '{"spec":{"template":{"spec":{"container":{"name":"ui-portfolio","image":"${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-${{ steps.vars.outputs.COMMIT_HASH }}"}}}}}'
 
       - name: Verify deployment
