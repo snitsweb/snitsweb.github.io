@@ -1,4 +1,3 @@
-
 import {
   Dialog,
   DialogContent,
@@ -16,7 +15,6 @@ interface Project {
   fullDescription: string;
   technologies: string[];
   liveLink?: string;
-  githubLink?: string;
 }
 
 interface ProjectModalProps {
@@ -39,7 +37,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
         </DialogHeader>
         
         <div className="space-y-4">
-          <div className="aspect-video overflow-hidden rounded-lg">
+          <div className="overflow-hidden rounded-lg w-full max-w-[400px] mx-auto" style={{ aspectRatio: '400/250' }}>
             <img
               src={project.image}
               alt={project.title}
@@ -74,14 +72,6 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   View Live
-                </a>
-              </Button>
-            )}
-            {project.githubLink && (
-              <Button variant="outline" asChild>
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                  <Github className="w-4 h-4 mr-2" />
-                  View Code
                 </a>
               </Button>
             )}

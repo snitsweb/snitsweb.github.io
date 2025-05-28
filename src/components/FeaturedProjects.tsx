@@ -5,31 +5,28 @@ import ProjectModal from "./ProjectModal";
 
 const projects = [
   {
-    title: "Personal Portfolio",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop",
-    description: "A modern portfolio website built with React and TypeScript",
-    fullDescription: "A comprehensive personal portfolio website showcasing my skills, projects, and experience. Built with modern web technologies including React, TypeScript, and Tailwind CSS. Features a responsive design, dark mode support, and smooth animations. The site includes sections for about me, featured projects, work experience, and skills.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "React Router"],
-    liveLink: "https://portfolio.example.com",
-    githubLink: "https://github.com/username/portfolio"
+    title: "Obmify",
+    image: "/projects/obmify.jpg",
+    description: "Online-monitoring of cryptocurrency exchanges",
+    fullDescription: "Obmify is a platform that enables users to securely and efficiently monitor and compare cryptocurrency exchange rates across multiple providers. The application features multiple dedicated UI panels for various purposes, including rate tracking, transaction history, and personalized settings. It also includes an affiliate system that allows users to earn rewards by referring others. Built using modern web technologies like Nuxt, Vue, TypeScript, and Tailwind CSS, Obmify offers a smooth, responsive user experience with support for dark mode and engaging animations.",
+    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare", "Grafana", "Prometheus"],
+    liveLink: "https://obmify.com/en",
   },
   {
-    title: "Design System",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
-    description: "Comprehensive design system with reusable components",
-    fullDescription: "A complete design system built for enterprise applications, featuring a comprehensive library of reusable UI components. Includes design tokens, component documentation, and usage guidelines. Built with React and styled-components, ensuring consistency across multiple applications and teams.",
-    technologies: ["React", "Styled Components", "Storybook", "TypeScript", "Figma"],
-    liveLink: "https://design-system.example.com",
-    githubLink: "https://github.com/username/design-system"
+    title: "Sky VIP Services",
+    image: "/projects/skyvip.jpg",
+    description: "Global Airport Concierge & VIP Assistance",
+    fullDescription: "SkyVIP Services is the world’s largest provider of airport meet-and-greet and concierge solutions, operating in over 500 airports worldwide. The platform offers three tiers of VIP service—Silver (Meet & Greet), Gold (VIP Lounge), and Black (Private Suite)—designed to streamline every aspect of travel, from fast-track immigration to tarmac car transfers and private lounge access. The system includes a feature-rich admin panel and CRM for efficient order management, allowing staff to coordinate bookings, track flights, and manage customer preferences with ease. Whether for business travelers, families, or those needing extra assistance, SkyVIP ensures a stress-free airport experience with 24/7 global support.",
+    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare", "NovaPost", "Stripe"],
+    liveLink: "https://skyvipservices.com/",
   },
   {
-    title: "Dashboard",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
-    description: "Analytics dashboard with real-time data visualization",
-    fullDescription: "A powerful analytics dashboard providing real-time insights and data visualization. Features interactive charts, customizable widgets, and real-time data updates. Built with React and D3.js for dynamic visualizations, includes user management, data filtering, and export capabilities.",
-    technologies: ["React", "D3.js", "Node.js", "MongoDB", "Socket.io", "Chart.js"],
-    liveLink: "https://dashboard.example.com",
-    githubLink: "https://github.com/username/dashboard"
+    title: "O.Taje",
+    image: "/projects/otaje.jpg",
+    description: "Online store with womans clothes",
+    fullDescription: "O.TAJE is a Ukrainian fashion brand specializing in stylish and comfortable women's knitwear. Their sale section offers up to 60% off on a variety of items, including dresses, sweaters, cardigans, and accessories, all crafted from high-quality materials like cotton, wool, and viscose. The brand emphasizes feminine comfort, combining elegance with practicality in their designs. Customers can enjoy additional discounts on purchases over 2000 UAH and receive gifts with their orders. The online store features a user-friendly interface with filters for material, size, color, and price, making shopping convenient and efficient.",
+    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare"],
+    liveLink: "https://sale.otaje.com/en",
   }
 ];
 

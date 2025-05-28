@@ -27,9 +27,11 @@ const Header = () => {
                 <p className="text-gray-600 dark:text-gray-400 mb-4">JavaScript/TypeScript Stack</p>
                 
                 <div className="flex gap-3">
-                  <Button variant="outline" className="gap-2">
-                    <Mail size={16} />
-                    Hire me
+                  <Button variant="outline" className="gap-2" asChild>
+                    <a href="https://djinni.co/q/f0e3fdc18d/" target="_blank" rel="noopener noreferrer">
+                      <Mail size={16} />
+                      Hire me
+                    </a>
                   </Button>
                   <Button 
                     className="gap-2 bg-blue-600 hover:bg-blue-700"
