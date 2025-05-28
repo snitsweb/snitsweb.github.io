@@ -17,7 +17,7 @@ const projects = [
     image: "/projects/skyvip.jpg",
     description: "Global Airport Concierge & VIP Assistance",
     fullDescription: "SkyVIP Services is the world’s largest provider of airport meet-and-greet and concierge solutions, operating in over 500 airports worldwide. The platform offers three tiers of VIP service—Silver (Meet & Greet), Gold (VIP Lounge), and Black (Private Suite)—designed to streamline every aspect of travel, from fast-track immigration to tarmac car transfers and private lounge access. The system includes a feature-rich admin panel and CRM for efficient order management, allowing staff to coordinate bookings, track flights, and manage customer preferences with ease. Whether for business travelers, families, or those needing extra assistance, SkyVIP ensures a stress-free airport experience with 24/7 global support.",
-    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare", "NovaPost", "Stripe"],
+    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare", "Braintree", "JPMorgan Chase"],
     liveLink: "https://skyvipservices.com/",
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     image: "/projects/otaje.jpg",
     description: "Online store with womans clothes",
     fullDescription: "O.TAJE is a Ukrainian fashion brand specializing in stylish and comfortable women's knitwear. Their sale section offers up to 60% off on a variety of items, including dresses, sweaters, cardigans, and accessories, all crafted from high-quality materials like cotton, wool, and viscose. The brand emphasizes feminine comfort, combining elegance with practicality in their designs. Customers can enjoy additional discounts on purchases over 2000 UAH and receive gifts with their orders. The online store features a user-friendly interface with filters for material, size, color, and price, making shopping convenient and efficient.",
-    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare"],
+    technologies: ["Nuxt", "Vue", "TypeScript", "Node.js", "Nest.js", "PostgreSQL", "Kubernetes", "Cloudflare", "NovaPost", "Stripe"],
     liveLink: "https://sale.otaje.com/en",
   }
 ];
