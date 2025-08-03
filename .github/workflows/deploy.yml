@@ -1,0 +1,49 @@
+name: Build and Deploy to Release Branch
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.4.1
+      
+      - name: Install dependencies
+        run: pnpm install
+      
+      - name: Build application
+        run: pnpm build
+      
+      - name: Create release branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git checkout -b release
+      
+      - name: Add built files
+        run: |
+          git add -A
+          git commit -m "Build: $(date)"
+      
+      - name: Push to release branch
+        run: |
+          git push origin release --force 
