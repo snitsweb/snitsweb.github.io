@@ -38,6 +38,18 @@ jobs:
           git config --local user.name "GitHub Action"
           git checkout -b release
       
+      - name: Extract dist files to root
+        run: |
+          # Remove existing files except .git and dist
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'dist' -exec rm -rf {} +
+          
+          # Move all files from dist to root
+          mv dist/* .
+          mv dist/.* . 2>/dev/null || true
+          
+          # Remove empty dist folder
+          rmdir dist
+      
       - name: Add built files
         run: |
           git add -A
