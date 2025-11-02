@@ -1,63 +1,53 @@
-name: Deploy Portfolio
+# Simple workflow for deploying static content to GitHub Pages
+name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [main]
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-env:
-  DOCKER_IMAGE: snitsweb/images
-  IMAGE_NAME: portfolio
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      - name: Login to DockerHub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
 
-      - name: Extract commit hash
-        id: vars
-        run: echo "COMMIT_HASH=${GITHUB_SHA:0:7}" >> $GITHUB_OUTPUT
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: |
-            ${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-latest
-            ${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-${{ steps.vars.outputs.COMMIT_HASH }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: "latest"
-
-      - name: Configure kubectl
+      - name: Build
         run: |
-          mkdir -p ~/.kube
-          echo "${{ secrets.KUBECONFIG }}" > ~/.kube/config
-          chmod 600 ~/.kube/config
+          bun install --frozen-lockfile
+          bun run build
 
-      - name: Update Kubernetes deployment
-        run: |
-          kubectl patch deployment ui-portfolio \
-            -n apps-prod \
-            -p '{"spec":{"template":{"spec":{"containers":[{"name":"ui-portfolio","image":"${{ env.DOCKER_IMAGE }}:${{ env.IMAGE_NAME }}-${{ steps.vars.outputs.COMMIT_HASH }}"}]}}}}'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'dist'
 
-      - name: Verify deployment
-        run: |
-          kubectl rollout status deployment/ui-portfolio --timeout=300s -n apps-prod
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
